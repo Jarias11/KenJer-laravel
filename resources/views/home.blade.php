@@ -3,16 +3,7 @@
 <head>
     @include('partials.head')
 </head>
-<style>
-    .dropdown-toggle::after {
-    display: none;
-  }
-.text-decoration-none{
-  text-decoration: none!important;
-}
-/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
-.icon-width { width: 2rem;}
-</style>
+
 <
     <div class="ad">Call Now For Free Estimate/Consultation 609-977-97813</div>
 	<body>
@@ -202,7 +193,7 @@
         $(document).ready(function(){
             console.log("HEFKNEFUSNIF");
             if ($(window).width() > 991){
-
+                console.log("HEFKNEFUSNIF2");
                 $('.navbar-light .d-menu').hover(function () {
                 $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
                 }, function () {
