@@ -3,11 +3,13 @@
 <head>
     @include('partials.head')
 </head>
+<
     <div class="ad">Call Now For Free Estimate/Consultation 609-977-97813</div>
 	<body>
+        @include('partials.navbar')
 		<section class="mainPg">
-		  
-			
+
+
 		  <div class="form-container">
 			<h1>FREE ESTIMATE</h1>
 			<form method="post" name="contactform" action="php/action_page.php" id="contactForm">
@@ -34,7 +36,7 @@
 			  <textarea name="msg" placeholder="Tell us more:" style="height:150px"></textarea>
 			  <input type="submit" value="Submit">
 			</form>
-			
+
 			<div id="thankYouMessage" style="display: none;">
 				<p>Thank you!</p>
 				<i class="fas fa-check"></i>
@@ -80,11 +82,11 @@
 		  </div>
 		  <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a>
 	  </section>
-	  
+
 	  <section class="aboutUs" id="aboutUS">
 		<div class="aboutUs-Bg"></div>
 		<h2 class="Title">About us</h2>
-		
+
 		<!--
 		<div class= "PWD">
 		  <div class="pwd-container">
@@ -102,20 +104,20 @@
 
 		</div>
 		-->
-		
-		
+
+
 		<div class="text-container">
-		  
+
 		<h4 class="Para-Title">About Ken-Jer Construction and Contractors</h4>
-		
-		
+
+
 
 		<p>Welcome to Ken-Jer Construction and Contractors, a family-owned business with a passion for building that has spanned decades. We take pride in our craftsmanship, attention to detail, and commitment to delivering exceptional results to our clients. With a wealth of experience and a dedicated team, we have become a trusted name in the construction industry.</p>
 
 		<h4 class="Para-Title">Our Legacy</h4>
 
 		<p> We have been transforming visions into reality, leaving a lasting mark on the communities we serve. At Ken-Jer, we believe that building is more than just a job—it's a labor of love. We approach each project with passion, commitment, and a desire to exceed expectations. Our team is driven by a shared dedication to craftsmanship and a genuine love for what we do. We understand that construction is about more than erecting structures; it's about creating spaces that inspire and improve lives.</p>
-		
+
 
 		<h4 class="Para-Title">Our Expertise</h4>
 
@@ -132,15 +134,15 @@
 		<h4 class="Para-Title">Contact Us</h4>
 
 		<p>Thank you for considering Ken-Jer Construction and Contractors for your construction needs. We would love to be a part of your next project. To learn more about our services or to discuss your vision, please don't hesitate to contact our friendly team. We look forward to building with you!</p>
-	  
-	  
-	  
+
+
+
 	  </div>
-	  
-		
+
+
 
 	  </section>
-	  
+
 
 
 
@@ -151,14 +153,14 @@
 		  <p class= "Service-description">Ken-Jer Construction is the leading, residential, and commercial contractors in central New Jersey. Serving for decades with a full team of experience professionals to create amazing projects designed by our customers.</p>
 		  </div>
 		  <div class="SButton">
-		  
+
 			<button class="toServices" onclick="goToServices()">View Services</button>
-		  
+
 		  </div>
-		  
-		  
-		  
-		  
+
+
+
+
 		<div class="card-Holder">
 		  <div class="card">
 			<img src="images/noteIcon.png">
@@ -180,7 +182,7 @@
 			<h3>Other Services</h3>
 			<p2>Dont see what your looking for above. See our other services available. We are ready to tackle any idea you can think of!</p2>
 		  </div>
-		  
+
 		</div>
 	  </div>
 
