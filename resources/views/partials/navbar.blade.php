@@ -49,7 +49,7 @@ L239.77,215.555L347.383,49.998l144.717,72.359l-26.387,45.446c-2.299,3.961-0.952,
 <ul class="navbar-nav mr-auto pl-lg-4">
 <li class="nav-item px-lg-2 active"> <a class="nav-link" href="#"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
 <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Services</a> </li>
-<li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>About</a> </li>
+<li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Gallery</a> </li>
 
 <li class="nav-item px-lg-2 dropdown d-menu">
 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-caret-square-down"></i></span>Dropdown
@@ -84,27 +84,5 @@ L239.77,215.555L347.383,49.998l144.717,72.359l-26.387,45.446c-2.299,3.961-0.952,
 </div>
 </nav>
 
-<!--The html below this line is for display purpose only-->
 
-<div class="py-5 text-center text-white bg-primary">
-<div class="container py-5">
-<div class="row py-5">
-<div class="mx-auto col-lg-10">
-  <h1 class="display-4 mb-4 ">This is a beautiful Bootstrap 4 Navbar with Social Media Icons </h1>
-  <p class="lead mb-5">There is nothing more rare, nor more beautiful, than a woman being unapologetically herself; comfortable in her perfect imperfection. To me, that is the true essence of beauty.  </p> <a href="#" class="btn btn-lg btn-outline-light mx-1">Take me there</a>
-</div>
-</div>
-</div>
-</div>
 
-<script>
-    $(document).ready(function () {
-    if ($(window).width() > 991){
-    $('.navbar-light .d-menu').hover(function () {
-            $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
-        }, function () {
-            $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
-        });
-        }
-    });
-</script>

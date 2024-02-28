@@ -50,37 +50,37 @@
 
 			<!-- Full-width images with number and caption text -->
 			<div class="mySlides fade">
-			  <img class ="ssPic"src="Work/ssimg1.jpg">
+			  <!-- <img class ="ssPic"src="Work/ssimg1.jpg"> -->
 			  <div class="text">Making your ideas come alive!</div>
 			</div>
 
 			<div class="mySlides fade">
-			  <img class="ssPic" src="Work/ssimg2.jpg">
+			  <!-- <img class="ssPic" src="Work/ssimg2.jpg"> -->
 			  <div class="text">Experienced in many areas!</div>
 			</div>
 
 			<div class="mySlides fade">
-			  <img class="ssPic" src="Work/ssimg3.jpg">
+			  <!-- <img class="ssPic" src="Work/ssimg3.jpg"> -->
 			  <div class="text">Tell us what your looking for!</div>
 			</div>
 
 			<div class="mySlides fade">
-			  <img class="ssPic" src="Work/ssimg4.jpg">
+			  <!-- <img class="ssPic" src="Work/ssimg4.jpg"> -->
 			  <div class="text">Find your style!</div>
 			</div>
 
 			<div class="mySlides fade">
-			  <img class="ssPic" src="Work/ssimg5.jpg">
+			  <!-- <img class="ssPic" src="Work/ssimg5.jpg"> -->
 			  <div class="text">Build your dream house!</div>
 			</div>
 
 			<div class="mySlides fade">
 			  <!--<div class="numbertext">6 / 6</div> -->
-			  <img class="ssPic" src="Work/ssimg6.jpg">
+			  <!-- <img class="ssPic" src="Work/ssimg6.jpg"> -->
 			  <div class="text">We will get the job done, no matter what!</div>
 			</div>
 		  </div>
-		  <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a>
+		  <!-- <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a> -->
 	  </section>
 
 	  <section class="aboutUs" id="aboutUS">
@@ -154,7 +154,7 @@
 		  </div>
 		  <div class="SButton">
 
-			<button class="toServices" onclick="goToServices()">View Services</button>
+			<!-- <button class="toServices" onclick="goToServices()">View Services</button> -->
 
 		  </div>
 
@@ -163,22 +163,22 @@
 
 		<div class="card-Holder">
 		  <div class="card">
-			<img src="images/noteIcon.png">
+			<!-- <img src="images/noteIcon.png"> -->
 			<h3>Free Estimates</h3>
 			<p2>We give 100% free estimates and consultations. Give us a call or fill out form above to reach us anytime 24/7. We are dedicated to working with you to build your dream projects! </p2>
 		  </div>
 		  <div class="card">
-			<img src="images/toolsIcon.png">
+			<!-- <img src="images/toolsIcon.png"> -->
 			<h3>Indoor Construction</h3>
 			<p2>We are experienced in many areas of the inside of the home. Working on basements, kitckens, bedrooms, and more. Check out our past projects</p2>
 		  </div>
 		  <div class="card">
-			<img src="images/brickIcon.png">
+			<!-- <img src="images/brickIcon.png"> -->
 			<h3>Outdoor Construction</h3>
 			<p2>From decks, patios, and gazeebos, our experience working outside is vast and these are just a few examples. Check out our past projects</p2>
 		  </div>
 		  <div class="card">
-			<img src="images/noteIcon.png">
+			<!-- <img src="images/noteIcon.png"> -->
 			<h3>Other Services</h3>
 			<p2>Dont see what your looking for above. See our other services available. We are ready to tackle any idea you can think of!</p2>
 		  </div>
@@ -188,4 +188,16 @@
 
 
 	  </section>
+      <script>
+        $(document).ready(function(){
+        if ($(window).width() > 991){
+            console.log("HEFKNEFUSNIF");
+            $('.navbar-light .d-menu').hover(function () {
+            $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+            }, function () {
+            $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+            });
+        }
+        });
+    </script>
 </body>
