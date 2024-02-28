@@ -1,16 +1,7 @@
 
 
 
-<style>
-    .dropdown-toggle::after {
-    display: none;
-  }
-.text-decoration-none{
-  text-decoration: none!important;
-}
-/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
-.icon-width { width: 2rem;}
-</style>
+
 
 
 
