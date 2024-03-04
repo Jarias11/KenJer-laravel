@@ -8,12 +8,21 @@ body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #07074d;
+    /* Adjust the color as needed */
+    margin-bottom: 10px;
+    /* Add space between the title and the form */
+}
+
 .formbold-mb-5 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .formbold-pt-3 {
-    padding-top: 12px;
+    padding-top: 8px;
 }
 
 .formbold-main-wrapper {
@@ -27,7 +36,14 @@ body {
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
-    background: white;
+    background: #f4f5f7;
+    /* Change the background color to a grey tone */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
+    /* Shadow */
+    padding: 30px;
+    /* Increase padding */
 }
 
 .formbold-form-label {
@@ -35,19 +51,21 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: #07074d;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .formbold-form-label-2 {
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .formbold-form-input {
     width: 100%;
-    padding: 12px 24px;
-    border-radius: 6px;
+    padding: 14px 20px;
+    /* Adjust padding */
+    border-radius: 8px;
+    /* Rounded corners */
     border: 1px solid #e0e0e0;
     background: white;
     font-weight: 500;
@@ -65,7 +83,8 @@ body {
 .formbold-btn {
     text-align: center;
     font-size: 16px;
-    border-radius: 6px;
+    border-radius: 8px;
+    /* Rounded corners */
     padding: 14px 32px;
     border: none;
     font-weight: 600;
@@ -76,7 +95,8 @@ body {
 }
 
 .formbold-btn:hover {
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    /* Adjust shadow on hover */
 }
 
 .formbold--mx-3 {

@@ -7,13 +7,11 @@
     <link href="{{ asset('css/slideshow.css') }}" rel="stylesheet">
 </head>
 
-< <div class="ad">Call Now For Free Estimate/Consultation 609-977-97813</div>
+< <div class="ad">Call Now For Free Estimate/Consultation 609-977-8713</div>
 
-    <body>
-
+    <body style="padding-top: 70px;">
         @include('partials.navbar')
-
-            @include('partials.slideshow')
+        @include('partials.slideshow')
 
 
 
@@ -59,7 +57,7 @@
                     <p>GOOD PRICES"</p>
                 </div>
 
-            <!-- <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a> -->
+                <!-- <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a> -->
         </section>
 
         <section class="aboutUs" id="aboutUS">

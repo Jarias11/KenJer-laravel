@@ -2,6 +2,7 @@
     <!-- Author: FormBold Team -->
     <!-- Learn More: https://formbold.com -->
     <div class="formbold-form-wrapper">
+        <h2 class="form-title">Get Free Estimate Today</h2>
         <form action="https://formbold.com/s/FORM_ID" method="POST">
             <div class="formbold-mb-5">
                 <label for="fullname" class="formbold-form-label"> Full Name </label>
