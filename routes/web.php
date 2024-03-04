@@ -19,3 +19,4 @@ use App\Http\Controllers\ServicesController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/services', [ServicesController::class,'index'])->name('services');
+
