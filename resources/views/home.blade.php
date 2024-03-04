@@ -203,5 +203,4 @@
         });
     </script>
 </body>
-@include('partials.footer')
-</html>
+@include('partials.footer');
