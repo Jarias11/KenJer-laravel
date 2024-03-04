@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
     @include('partials.head')
+    <link href="{{ asset('css/slideshow.css') }}" rel="stylesheet">
 </head>
 
 < <div class="ad">Call Now For Free Estimate/Consultation 609-977-97813</div>
@@ -10,20 +12,48 @@
     <body>
 
         @include('partials.navbar')
+        <section class="slideshow">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <img class="slide-image" src="images/slide1.jpg" alt="Slide 1">
+                <img class="slide-image" src="images/slide2.jpg" alt="Slide 2">
+                <img class="slide-image" src="images/slide3.jpg" alt="Slide 3">
+            </div>
 
-        <!--The html below this line is for display purpose only-->
-
-        <div class="py-5 text-center text-white bg-primary">
-            <div class="container py-5">
-                <div class="row py-5">
-                    <div class="mx-auto col-lg-10">
-                        <h1 class="display-4 mb-4 ">Get your free estimate! </h1>
-                        <p class="lead mb-5">Contact us today </p> <a href="#" class="btn btn-lg btn-outline-light mx-1">Get Free Estimate</a>
-                        @include('partials.form')
+            <!-- Content overlay -->
+            <div class="content-overlay">
+                <div class="py-5 text-center text-white">
+                    <div class="container py-5">
+                        <div class="row py-5">
+                            <div class="mx-auto col-lg-10">
+                                <h1 class="display-4 mb-4">Get your free estimate!</h1>
+                                <p class="lead mb-5">Contact us today</p>
+                                <a href="#" class="btn btn-lg btn-outline-light mx-1">Get Free Estimate</a>
+                                @include('partials.form')
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <script>
+                let currentIndex = 0;
+                const slides = document.querySelectorAll('.slide-image');
+                const totalSlides = slides.length;
+
+                function showNextSlide() {
+                    slides[currentIndex].style.opacity = 0;
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    slides[currentIndex].style.opacity = 1;
+                }
+
+                // Change slide every 5 seconds
+                setInterval(showNextSlide, 5000);
+            </script>
+        </section>
+
+
         <section class="mainPg">
 
 
