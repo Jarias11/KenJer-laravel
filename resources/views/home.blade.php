@@ -12,46 +12,9 @@
     <body>
 
         @include('partials.navbar')
-        <section class="slideshow">
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-                <!-- Slides -->
-                <img class="slide-image" src="images/slide1.jpg" alt="Slide 1">
-                <img class="slide-image" src="images/slide2.jpg" alt="Slide 2">
-                <img class="slide-image" src="images/slide3.jpg" alt="Slide 3">
-            </div>
 
-            <!-- Content overlay -->
-            <div class="content-overlay">
-                <div class="py-5 text-center text-white">
-                    <div class="container py-5">
-                        <div class="row py-5">
-                            <div class="mx-auto col-lg-10">
-                                <h1 class="display-4 mb-4">Get your free estimate!</h1>
-                                <p class="lead mb-5">Contact us today</p>
-                                <a href="#" class="btn btn-lg btn-outline-light mx-1">Get Free Estimate</a>
-                                @include('partials.form')
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @include('partials.slideshow')
 
-            <script>
-                let currentIndex = 0;
-                const slides = document.querySelectorAll('.slide-image');
-                const totalSlides = slides.length;
-
-                function showNextSlide() {
-                    slides[currentIndex].style.opacity = 0;
-                    currentIndex = (currentIndex + 1) % totalSlides;
-                    slides[currentIndex].style.opacity = 1;
-                }
-
-                // Change slide every 5 seconds
-                setInterval(showNextSlide, 5000);
-            </script>
-        </section>
 
 
         <section class="mainPg">
@@ -96,38 +59,6 @@
                     <p>GOOD PRICES"</p>
                 </div>
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <!-- <img class ="ssPic"src="Work/ssimg1.jpg"> -->
-                    <div class="text">Making your ideas come alive!</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <!-- <img class="ssPic" src="Work/ssimg2.jpg"> -->
-                    <div class="text">Experienced in many areas!</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <!-- <img class="ssPic" src="Work/ssimg3.jpg"> -->
-                    <div class="text">Tell us what your looking for!</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <!-- <img class="ssPic" src="Work/ssimg4.jpg"> -->
-                    <div class="text">Find your style!</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <!-- <img class="ssPic" src="Work/ssimg5.jpg"> -->
-                    <div class="text">Build your dream house!</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <!--<div class="numbertext">6 / 6</div> -->
-                    <!-- <img class="ssPic" src="Work/ssimg6.jpg"> -->
-                    <div class="text">We will get the job done, no matter what!</div>
-                </div>
-            </div>
             <!-- <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a> -->
         </section>
 
@@ -236,18 +167,6 @@
 
 
         </section>
-        <script>
-            $(document).ready(function() {
-                console.log("HEFKNEFUSNIF");
-                if ($(window).width() > 991) {
-                    console.log("HEFKNEFUSNIF2");
-                    $('.navbar-light .d-menu').hover(function() {
-                        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
-                    }, function() {
-                        $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
-                    });
-                }
-            });
-        </script>
+
     </body>
     @include('partials.footer');
