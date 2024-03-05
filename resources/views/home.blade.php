@@ -6,10 +6,10 @@
     @include('partials.head')
     <link href="{{ asset('css/slideshow.css') }}" rel="stylesheet">
 </head>
+<!--
+< <div class="ad">Call Now For Free Estimate/Consultation 609-977-8713</div> -->
 
-< <div class="ad">Call Now For Free Estimate/Consultation 609-977-8713</div>
-
-    <body style="padding-top: 70px;">
+    <body>
         @include('partials.navbar')
         @include('partials.slideshow')
 
