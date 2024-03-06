@@ -29,12 +29,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 48px;
+    padding: 15px;
+    max-width: 500px;
+    width: 100%;
+    border: red solid 2px;
+
 }
 
 .formbold-form-wrapper {
     margin: 0 auto;
-    max-width: 550px;
     width: 100%;
     background: #f4f5f7;
     /* Change the background color to a grey tone */
@@ -44,6 +47,7 @@ body {
     /* Shadow */
     padding: 30px;
     /* Increase padding */
+    border: black solid 2px;
 }
 
 .formbold-form-label {
@@ -51,18 +55,18 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: #07074d;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .formbold-form-label-2 {
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .formbold-form-input {
     width: 100%;
-    padding: 14px 20px;
+    padding: 14px 15px;
     /* Adjust padding */
     border-radius: 8px;
     /* Rounded corners */
@@ -72,7 +76,7 @@ body {
     font-size: 16px;
     color: #6b7280;
     outline: none;
-    resize: none;
+    resize: horizontal;
 }
 
 .formbold-form-input:focus {
@@ -120,6 +124,7 @@ body {
 .w-full {
     width: 100%;
 }
+
 
 @media (min-width: 540px) {
     .sm\:w-half {

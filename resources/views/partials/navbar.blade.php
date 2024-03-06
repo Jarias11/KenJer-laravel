@@ -15,7 +15,7 @@ BootStrap NavBar Example Three - Social Media Icons
     <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
 
             <span class="ml-3">
-                <img src="images/logo.png" alt="Logo" style="height: 70px;"> <!-- Adjust the height as needed -->
+                <img src="images/logo.png" alt="Logo" style="height: 50px;"> <!-- Adjust the height as needed -->
             </span>
         </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
             <span class="navbar-toggler-icon"></span>

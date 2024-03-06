@@ -1,12 +1,14 @@
 <div class="formbold-main-wrapper">
     <!-- Author: FormBold Team -->
     <!-- Learn More: https://formbold.com -->
-    <div class="formbold-form-wrapper">
-        <h2 class="form-title">Get Free Estimate Today</h2>
-        <form action="https://formbold.com/s/FORM_ID" method="POST">
-            <div class="formbold-mb-5">
+    <div id="ContactFormContainer" class="formbold-form-wrapper" style="display: none;">
+
+        <form id="ContactForm" data-submit-url="{{ route('contact.submitQuote') }}" method="POST">
+            @csrf
+            <h2 class="form-title">Get Free Estimate Today</h2>
+            <div class=" formbold-mb-5">
                 <label for="fullname" class="formbold-form-label"> Full Name </label>
-                <input type="text" name="fullname" id="fullname" placeholder="Full Name" class="formbold-form-input" />
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name" class="formbold-form-input" required />
             </div>
             <div class="formbold-mb-5">
                 <label for="email" class="formbold-form-label"> Email Address </label>
@@ -41,8 +43,9 @@
                 <textarea name="message" id="message" placeholder="Enter your message" class="formbold-form-input"></textarea>
             </div>
             <div>
-                <button class="formbold-btn">Free Estimate</button>
+                <button id="SubmitForm" class="formbold-btn">Free Estimate</button>
             </div>
         </form>
     </div>
 </div>
+<script src="{{ asset('js/form.js') }}"></script>
