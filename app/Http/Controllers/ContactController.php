@@ -13,6 +13,6 @@ class ContactController extends Controller
 
     public function submitQuoteRequest(Request $request)
     {
-        var_dump($request);
+        var_dump($request->all());
     }
 }

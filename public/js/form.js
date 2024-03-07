@@ -1,7 +1,7 @@
 $(() => {
     // variables
     const $FormButton = $('#ShowForm');
-    var submitUrl = $('#ContactForm').data('submit-url');
+    const submitUrl = $('#SubmitUrl').val();
 
     $FormButton.click(() => {
         $('#ContactFormContainer').show();
@@ -11,22 +11,16 @@ $(() => {
     const $Form = $('#ContactForm')
     $Form.submit(function (event) {
         event.preventDefault();
-
-        // Serialize the form data
-        var formData = $(this).serialize();
-        console.log(formData); // Log the serialized form data
+        $('#ContactFormContainer').hide();
 
         $.ajax({
             type: 'POST',
-            url: submitUrl, // Use the route name for the form action
-            data: $(this).serialize(), // Serialize the form data
+            url: submitUrl,
+            data: $(this).serialize(),
             success: function (response) {
-                // Handle success
-                console.log('Quote request submitted successfully.WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO');
-                console.log(response);
+                openModal('request sent');
             },
             error: function (error) {
-                // Handle error
                 console.error(error);
             }
         });

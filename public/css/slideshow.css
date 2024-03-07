@@ -6,7 +6,7 @@
     top: 63px;
     position: relative;
     width: 100%;
-    min-height: 150vh;
+    min-height: 120vh;
     /* Adjust the height as needed */
     overflow: hidden;
 }
@@ -35,5 +35,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: green solid 3px;
 }

@@ -4,13 +4,17 @@
 <head>
 
     @include('partials.head')
-    <link href="{{ asset('css/slideshow.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('css/form.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/modal.js') }}"></script>
+
 </head>
 <!--
 < <div class="ad">Call Now For Free Estimate/Consultation 609-977-8713</div> -->
 
 <body>
     @include('partials.navbar')
+    @include('partials.modal')
     <div class="slideshow-container">
         <!-- Slides -->
         <img class="slide-image" src="images/slide1.jpg" alt="Slide 1">
@@ -26,7 +30,7 @@
                                 <h1 class=" display-4 mb-4">Get your free estimate!</h1>
                                 <p class="lead mb-2">Contact us today</p>
                             </div>
-                            <button id="ShowForm" class="btn btn-lg btn-outline-light mx-1">Get Free Estimate</button>
+                            <button id="ShowForm" class="btn btn-lg btn-light mt-2 mx-1">Get Free Estimate</button>
                             @include('partials.form')
                         </div>
                     </div>
@@ -38,17 +42,7 @@
 
     <section class="mainPg">
         <!-- <div class="form-container">
-            <h1>FREE ESTIMATE</h1>
-            <form method="post" name="contactform" action="php/action_page.php" id="contactForm" style="display: none;">
 
-            </form>
-
-            <div id="thankYouMessage" style="display: none;">
-                <p>Thank you!</p>
-                <i class="fas fa-check"></i>
-            </div>
-        </div>
-        <div class="slideshow-container">
             <div class="BlockAd">
                 <p>"GOOD WORK</p>
                 <p>GOOD PRICES"</p>
@@ -165,7 +159,3 @@
 
 </body>
 @include('partials.footer');
-
-<script>
-
-</script>

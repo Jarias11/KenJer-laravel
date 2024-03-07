@@ -1,9 +1,11 @@
+
+
 <div class="formbold-main-wrapper">
     <!-- Author: FormBold Team -->
     <!-- Learn More: https://formbold.com -->
     <div id="ContactFormContainer" class="formbold-form-wrapper" style="display: none;">
 
-        <form id="ContactForm" data-submit-url="{{ route('contact.submitQuote') }}" method="POST">
+        <form id="ContactForm" method="POST">
             @csrf
             <h2 class="form-title">Get Free Estimate Today</h2>
             <div class=" formbold-mb-5">
@@ -12,18 +14,18 @@
             </div>
             <div class="formbold-mb-5">
                 <label for="email" class="formbold-form-label"> Email Address </label>
-                <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input" />
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input" required />
             </div>
             <div class="formbold-mb-5">
                 <label for="phone" class="formbold-form-label"> Phone Number </label>
-                <input type="text" name="phone" id="phone" placeholder="Enter your phone number" class="formbold-form-input" />
+                <input type="text" name="phone" id="phone" placeholder="Enter your phone number" class="formbold-form-input" required />
             </div>
             <div class="formbold-mb-5">
                 <label for="state" class="formbold-form-label"> State </label>
-                <select name="state" id="state" class="formbold-form-input">
-                    <option value="outdoors">NJ</option>
-                    <option value="indoors">PA</option>
-                    <option value="basements">NY</option>
+                <select name="state" id="state" class="formbold-form-input" required>
+                    <option value="NJ">NJ</option>
+                    <option value="PA">PA</option>
+                    <option value="NY">NY</option>
                 </select>
             </div>
             <div class="formbold-mb-5">
@@ -48,4 +50,5 @@
         </form>
     </div>
 </div>
+<input id="SubmitUrl" type="hidden" value="{{ route('contact.submitQuote') }}" />
 <script src="{{ asset('js/form.js') }}"></script>
