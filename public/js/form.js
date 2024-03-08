@@ -11,7 +11,7 @@ $(() => {
     const $Form = $('#ContactForm')
     $Form.submit(function (event) {
         event.preventDefault();
-        $('#ContactFormContainer').hide();
+
 
         $.ajax({
             type: 'POST',
@@ -19,10 +19,16 @@ $(() => {
             data: $(this).serialize(),
             success: function (response) {
                 openModal('request sent');
+                $('#ContactFormContainer').hide();
+
+                $('#ShowForm').show();
+
             },
             error: function (error) {
                 console.error(error);
             }
+
         });
+        $(this)[0].reset();
     });
 });

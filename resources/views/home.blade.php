@@ -4,9 +4,11 @@
 <head>
 
     @include('partials.head')
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link href="{{ asset('css/form.css') }}" rel="stylesheet">
     <script src="{{ asset('js/modal.js') }}"></script>
+    <script src="{{ asset('js/slideshow.js') }}"></script>
+
 
 </head>
 <!--
@@ -15,32 +17,44 @@
 <body>
     @include('partials.navbar')
     @include('partials.modal')
-    <div class="slideshow-container">
-        <!-- Slides -->
-        <img class="slide-image" src="images/slide1.jpg" alt="Slide 1">
-        <img class="slide-image" src="images/slide2.jpg" alt="Slide 2">
-        <img class="slide-image" src="images/slide3.jpg" alt="Slide 3">
-        <!-- Content overlay -->
-        <div class="content-overlay">
-            <div class="py-5 text-center text-black">
-                <div class="container py-5">
-                    <div class="row py-5">
-                        <div class="mx-auto col-lg-11">
-                            <div id="SlideshowText" class="SlideshowText" style="background-color: rgba(255, 255, 255, 0.8); padding:10px">
-                                <h1 class=" display-4 mb-4">Get your free estimate!</h1>
-                                <p class="lead mb-2">Contact us today</p>
+    <section class="Main">
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <img class="slide-image" src="images/slide1.jpg" alt="Slide 1">
+            <img class="slide-image" src="images/slide2.jpg" alt="Slide 2">
+            <img class="slide-image" src="images/slide3.jpg" alt="Slide 3">
+            <!-- Content overlay -->
+            <div class="content-overlay ">
+                <div class="py-5 text-center text-black">
+                    <div class="container py-5">
+                        <div class="row py-5">
+                            <div class="mx-auto col-lg-11">
+                                <div id="SlideshowText border red" class="SlideshowText slide-up" style="background-color: rgba(255, 255, 255, 0.8); padding:20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);">
+                                    <h1 class=" display-3 mb-4">Get your free estimate!</h1>
+                                    <p class="lead mb-2">Contact us today</p>
+                                </div>
+                                <button id="ShowForm" class="btn btn-lg btn-light mt-2 mx-1 slide-right">Get Free Estimate</button>
+                                @include('partials.form')
                             </div>
-                            <button id="ShowForm" class="btn btn-lg btn-light mt-2 mx-1">Get Free Estimate</button>
-                            @include('partials.form')
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="{{ asset('js/slideshow.js') }}"></script>
+    </section>
 
-    <section class="mainPg">
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2>About Ken-Jer</h2>
+                    <p>Welcome to Ken-Jer, your trusted construction company with over 20 years of experience. Founded by Fanny Arias and Hernan Zhingre, Ken-Jer specializes in a wide range of construction services for both residential and commercial clients.</p>
+                    <p>At Ken-Jer, we take pride in delivering high-quality craftsmanship and exceptional customer service. From interior renovations to outdoor construction projects, we're dedicated to bringing your vision to life.</p>
+                    <p>Our team consists of skilled professionals who are committed to exceeding your expectations and ensuring your satisfaction with every project we undertake.</p>
+                    <p>Thank you for considering Ken-Jer for your construction needs. We look forward to the opportunity to work with you and make your construction dreams a reality.</p>
+                </div>
+            </div>
+        </div>
         <!-- <div class="form-container">
 
             <div class="BlockAd">
@@ -156,6 +170,6 @@
 
 
     </section>
-
+    <script src="{{ asset('js/transitions.js') }}"></script>
 </body>
 @include('partials.footer');
