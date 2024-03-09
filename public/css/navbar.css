@@ -1,8 +1,30 @@
 .dropdown-toggle::after {
     display: none;
-  }
-.text-decoration-none{
-  text-decoration: none!important;
 }
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
 /* Font Awesome Icons have variable width. Added fixed width to fix that.*/
-.icon-width { width: 2rem;}
+.icon-width {
+    width: 2rem;
+}
+
+.navbar {
+    padding-top: 1px;
+    /* Adjust the top padding as needed */
+    padding-bottom: 1px;
+    /* Adjust the bottom padding as needed */
+}
+
+
+
+.navbar-brand img {
+    height: 80px;
+    /* Adjust the height of the logo */
+    /* You can also adjust other styles such as padding or margin */
+    padding: 0;
+    /* Remove padding */
+
+}

@@ -28,3 +28,6 @@ Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 
 //Contact Page
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+// Process the Quote Request Form submission from the Contact Page
+Route::post('/contact/submit-quote', [ContactController::class, 'submitQuoteRequest'])->name('contact.submitQuote');
