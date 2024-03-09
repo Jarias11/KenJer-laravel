@@ -20,9 +20,9 @@
     <section class="Main">
         <div class="slideshow-container">
             <!-- Slides -->
-            <img class="slide-image" src="images/slide1.jpg" alt="Slide 1">
-            <img class="slide-image" src="images/slide2.jpg" alt="Slide 2">
-            <img class="slide-image" src="images/slide3.jpg" alt="Slide 3">
+            <img class="slide-image" src="images/index/slide1.jpg" alt="Slide 1">
+            <img class="slide-image" src="images/index/slide2.jpg" alt="Slide 2">
+            <img class="slide-image" src="images/index/slide3.jpg" alt="Slide 3">
             <!-- Content overlay -->
             <div class="content-overlay ">
                 <div class="py-5 text-center text-black">
@@ -44,14 +44,81 @@
     </section>
 
     <section class="about">
+        <div class="container text-center">
+            <div class="row">
+                <div class="rounded border border-primary shadow col-md-11 mx-auto">
+                    <h1 class="text-primary fw-bold fs-2 mt-2">About Ken-Jer</h1>
+                    <div class="p-4">
+                        <p class="fs-4 text-dark">Welcome to Ken-Jer, your trusted construction company with over 20 years of experience. Founded by Fanny Arias and Hernan Zhingre, Ken-Jer specializes in a wide range of construction services for both residential and commercial clients.</p>
+                        <p class="fs-4 text-dark">At Ken-Jer, we take pride in delivering high-quality craftsmanship and exceptional customer service. From interior renovations to outdoor construction projects, we're dedicated to bringing your vision to life.</p>
+                        <p class="fs-4 text-dark">Our team consists of skilled professionals who are committed to exceeding your expectations and ensuring your satisfaction with every project we undertake.</p>
+                        <p class="fs-4 text-dark">Thank you for considering Ken-Jer for your construction needs. We look forward to the opportunity to work with you and make your construction dreams a reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h2>About Ken-Jer</h2>
-                    <p>Welcome to Ken-Jer, your trusted construction company with over 20 years of experience. Founded by Fanny Arias and Hernan Zhingre, Ken-Jer specializes in a wide range of construction services for both residential and commercial clients.</p>
-                    <p>At Ken-Jer, we take pride in delivering high-quality craftsmanship and exceptional customer service. From interior renovations to outdoor construction projects, we're dedicated to bringing your vision to life.</p>
-                    <p>Our team consists of skilled professionals who are committed to exceeding your expectations and ensuring your satisfaction with every project we undertake.</p>
-                    <p>Thank you for considering Ken-Jer for your construction needs. We look forward to the opportunity to work with you and make your construction dreams a reality.</p>
+                <div class="col-md-4 d-flex justify-content-center align-items-center mt-5">
+                    <div class="card mb-4 text-center">
+                        <div class="card-inner">
+                            <div class="front">
+                                <!-- Front content -->
+                                <img src="images/index/noteIcon.png" class="card-img-top mt-3 mx-auto" alt="Free Estimates Icon">
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title display-5">Free Estimates</h5>
+                                    <p class="card-text lh-lg lead">Ken-Jer offers free estimates for your construction projects. We believe in transparency and providing you with accurate cost estimates for your peace of mind.</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <!-- Back content -->
+                                <!-- Add your back content here -->
+                                <h5 class="card-title display-5">Free Estimates</h5>
+                                <p class="card-text lh-lg lead">This is the back</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card mb-4 text-center">
+                        <div class="card-inner">
+                            <div class="front">
+                                <!-- Front content -->
+                                <img src="images/index/toolsIcon.png" class="card-img-top mt-3 mx-auto" alt="Tools Icon">
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title display-5">Versatile Services</h5>
+                                    <p class="card-text lh-xl lead">Ken-Jer specializes in a variety of construction services, both indoor and outdoor. From interior renovations to outdoor construction projects, our family-owned company is dedicated to providing the best solutions for your needs.</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <!-- Back content -->
+                                <!-- Add your back content here -->
+                                <h5 class="card-title display-5">Back Title 2</h5>
+                                <p class="card-text lh-lg lead">This is the back content for the second card.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center mt-5">
+                    <div class="card mb-4 text-center">
+                        <div class="card-inner">
+                            <div class="front">
+                                <!-- Front content -->
+                                <img src="images/index/brickIcon.png" class="card-img-top mt-3 mx-auto " alt="Worker on Brick Wall Icon">
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title display-5">Over 20 Years of Expertise</h5>
+                                    <p class="card-text lh-lg lead">With over two decades of experience, Ken-Jer brings a wealth of expertise to every project. Our skilled team has been delivering high-quality craftsmanship for residential and commercial clients.</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <!-- Back content -->
+                                <!-- Add your back content here -->
+                                <h5 class="card-title display-5">Back Title 3</h5>
+                                <p class="card-text lh-lg lead">This is the back content for the third card.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
