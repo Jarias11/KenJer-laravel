@@ -157,7 +157,7 @@
  }
 
  .about {
-     margin-top: 7vh;
+     margin-top: 6vh;
  }
 
  .card-img-top {
@@ -235,6 +235,7 @@
      font-size: 1.25rem;
      /* Adjust the value as needed */
  }
+
  .dark-bg {
      background-color: #333;
      /* Dark grey background color */

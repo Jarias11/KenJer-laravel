@@ -43,10 +43,10 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about dark-bg">
         <div class="container text-center">
             <div class="row">
-                <div class="rounded border border-primary shadow col-md-11 mx-auto">
+                <div class="rounded border border-primary shadow col-md-11 mx-auto bg-white">
                     <h1 class="text-primary fw-bold fs-2 mt-2">About Ken-Jer</h1>
                     <div class="p-4">
                         <p class="fs-4 text-dark">Welcome to Ken-Jer, your trusted construction company with over 20 years of experience. Founded by Fanny Arias and Hernan Zhingre, Ken-Jer specializes in a wide range of construction services for both residential and commercial clients.</p>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <div class="col-md-4 d-flex justify-content-center align-items-center mt-5">
                     <div class="card mb-4 text-center">
@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    
+
 
 
 
