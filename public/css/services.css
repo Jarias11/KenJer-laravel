@@ -1,0 +1,15 @@
+.light-bg {
+    background-color: #f8f9fa;
+    /* Light background color */
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.dark-bg {
+    background-color: #343a40;
+    /* Dark background color */
+    color: #ffffff;
+    /* Text color for dark background */
+    padding: 20px;
+    /* Adjust padding as needed */
+}
