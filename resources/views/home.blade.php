@@ -4,6 +4,7 @@
 <head>
 
     @include('partials.head')
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="{{ asset('css/form.css') }}" rel="stylesheet">
     <script src="{{ asset('js/modal.js') }}"></script>
@@ -164,6 +165,7 @@
 
 
 
+
     </section>
 
 
@@ -214,3 +216,5 @@
     <script src="{{ asset('js/transitions.js') }}"></script>
 </body>
 @include('partials.footer');
+
+</html>
