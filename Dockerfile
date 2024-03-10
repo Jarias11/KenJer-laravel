@@ -1,3 +1,5 @@
+# Use a base image that includes Node.js and npm along with PHP
+FROM node:16.14 AS node
 FROM php:8.2-fpm
 
 # Install system dependencies
@@ -27,6 +29,10 @@ COPY . /var/www
 
 # Install dependencies
 RUN composer install
+
+# Install Node.js and npm
+COPY --from=node /usr/local/bin/node /usr/local/bin/
+COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
 
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
