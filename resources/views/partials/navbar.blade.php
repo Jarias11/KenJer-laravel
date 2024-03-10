@@ -27,6 +27,12 @@ BootStrap NavBar Example Three - Social Media Icons
                 <li class="nav-item px-lg-2 active"> <a class="nav-link" href="{{ route('home') }}"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a> </li>
                 <li class="nav-item px-lg-2"> <a class="nav-link" href="{{ route('services') }}"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Services</a> </li>
                 <li class="nav-item px-lg-2"> <a class="nav-link" href="{{ route('gallery') }}"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>Gallery</a> </li>
+                <!-- Admin Link -->
+                @auth
+                @if(auth()->user()->is_admin)
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="/admin/gallery/edit"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Edit Gallery</a></li>
+                @endif
+                @endauth
 
                 <!-- <li class="nav-item px-lg-2 dropdown d-menu"> -->
                 <!-- <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-caret-square-down"></i></span>Dropdown -->
@@ -56,6 +62,14 @@ BootStrap NavBar Example Three - Social Media Icons
                 <li class="nav-item"> <a class="nav-link" href="#">
                         <i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
                     </a> </li>
+                @auth
+                <li>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit">Logout</button>
+                    </form>
+                </li>
+                @endauth
             </ul>
         </div>
     </div>
