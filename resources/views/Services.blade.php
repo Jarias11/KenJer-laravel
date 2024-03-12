@@ -60,14 +60,76 @@
 
         <!-- Services sections -->
         <section class=" light-bg" id="services-offered">
-            <h2>Services Offered</h2>
-            <p>Here are the construction services offered by Ken-Jer:</p>
-            <ul>
-                <li>Basement Remodel</li>
-                <li>Kitchen Remodel</li>
-                <li>Bathroom Remodel</li>
-                <!-- Add more services here -->
-            </ul>
+            <div class="container">
+                <div class="row">
+                    <!-- Exterior Services -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Exterior Services</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Paver Patios</li>
+                                    <li class="list-group-item">Outdoor Kitchens</li>
+                                    <li class="list-group-item">Paver Pathways</li>
+                                    <li class="list-group-item">Walkways</li>
+                                    <li class="list-group-item">Fire Pits</li>
+                                    <li class="list-group-item">Paver Retaining Walls</li>
+                                    <li class="list-group-item">Decorative Stonework</li>
+                                    <li class="list-group-item">Professional Deck Building/Repair/Resurfacing</li>
+                                    <li class="list-group-item">Gazebos</li>
+                                    <li class="list-group-item">Porches</li>
+                                    <li class="list-group-item">Pergolas</li>
+                                    <li class="list-group-item">Exterior Painting</li>
+                                    <li class="list-group-item">Roofing Repairs and Installation</li>
+                                    <li class="list-group-item">Fence Installation and Repair</li>
+                                    <li class="list-group-item">Window and Door Replacement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interior Services -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Interior Services</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Furniture Assembly</li>
+                                    <li class="list-group-item">Attic Remodel</li>
+                                    <li class="list-group-item">Basement Remodel</li>
+                                    <li class="list-group-item">Bathroom Remodel</li>
+                                    <li class="list-group-item">Kitchen Remodel</li>
+                                    <li class="list-group-item">Multiple Room Remodeling/Renovation</li>
+                                    <li class="list-group-item">Accommodation Additions for People with Disabilities</li>
+                                    <li class="list-group-item">Brick & Stone Fireplace Repair</li>
+                                    <li class="list-group-item">Brick & Stone Wall Builder</li>
+                                    <li class="list-group-item">Cabinet Painting/Refinishing</li>
+                                    <li class="list-group-item">Crown Molding</li>
+                                    <li class="list-group-item">Interior Painting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- General Services -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">General Services</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Free Estimates</li>
+                                    <li class="list-group-item">Consultations</li>
+                                    <li class="list-group-item">Electrical Work</li>
+                                    <li class="list-group-item">Plumbing Services</li>
+                                    <li class="list-group-item">HVAC Installation and Repair</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -75,18 +137,7 @@
 
 
 
-        <section class="dark-bg" id="areas-served">
-            <h2>Areas We Serve</h2>
-            <p>We proudly offer our construction services in the following areas:</p>
-            <ul>
-                <li>City 1</li>
-                <li>City 2</li>
-                <li>City 3</li>
-                <!-- Add more areas served here -->
-            </ul>
-        </section>
-
-        <section class="light-bg" id="our-process">
+        <section class="dark-bg" id="our-process">
             <h2>Our Process</h2>
             <p>At Ken-Jer, we follow a systematic process to ensure the success of every construction project:</p>
             <ol>
@@ -97,6 +148,19 @@
                 <li>Final Inspection and Handover</li>
             </ol>
         </section>
+
+        <section class="light-bg" id="areas-served">
+            <h2>Areas We Serve</h2>
+            <p>We proudly offer our construction services in the following areas:</p>
+            <ul>
+                <li>City 1</li>
+                <li>City 2</li>
+                <li>City 3</li>
+                <!-- Add more areas served here -->
+            </ul>
+        </section>
+
+
 
         <section class="dark-bg" id="faq">
             <h2 class="text-light">FAQs (Frequently Asked Questions)</h2>
