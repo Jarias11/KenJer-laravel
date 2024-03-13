@@ -15,7 +15,7 @@
     <section style="padding-top: 7vh;">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-12">
+                <div class="col-md-12" style="padding:0;">
                     <!-- Image with title and text overlay -->
                     <div class="position-relative">
                         <img src="images/services/mainImage.jpg" class="img-fluid" alt="Introduction Image" style="width: 100%; max-height: 50vh;">
@@ -61,7 +61,8 @@
         <!-- Services sections -->
         <section class=" light-bg" id="services-offered">
             <div class="container">
-                <div class="row">
+                <h1 style="font-weight:bold;">Services we offer:</h1>
+                <div class=" row">
                     <!-- Exterior Services -->
                     <div class="col-md-4">
                         <div class="card mb-4">
@@ -138,26 +139,142 @@
 
 
         <section class="dark-bg" id="our-process">
-            <h2>Our Process</h2>
-            <p>At Ken-Jer, we follow a systematic process to ensure the success of every construction project:</p>
-            <ol>
-                <li>Initial Consultation</li>
-                <li>Design and Planning</li>
-                <li>Permit Acquisition</li>
-                <li>Construction</li>
-                <li>Final Inspection and Handover</li>
-            </ol>
+            <div class="process">
+                <h1>Our Process</h1>
+
+                <p class="subhead">To Make Your Vision Come True</p>
+
+                <ol class="process-chart">
+                    <li>
+                        <h3>Initial Consultation </h3>
+                        <div class="details">
+                            <p>We begin by understanding your needs and requirements through a detailed consultation to lay the foundation for the project.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Design and Planning</h3>
+                        <div class="details">
+                            <p>Our team collaborates with you to develop a comprehensive design plan that meets your vision and goals.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Materials Procurement</h3>
+                        <div class="details">
+                            <p>We gather all necessary materials, permits, and other resources required for the design or build, ensuring a seamless execution of the project.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Fair Pricing</h3>
+                        <div class="details">
+                            <p>We believe in transparent pricing and work closely with you to discuss a fair and competitive price for your project. Our commitment to affordability ensures that our prices remain cheap without compromising on quality.
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Construction</h3>
+                        <div class="details">
+                            <p>Our skilled builders bring the design to life with precision and attention to detail, utilizing quality materials and techniques.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Final Inspection</h3>
+                        <div class="details">
+                            <p>Before project completion, we conduct a thorough inspection to ensure that every aspect meets our high standards of quality and craftsmanship.</p>
+                            <p>
+
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Client Satisfaction</h3>
+                        <div class="details">
+                            <p>We ensure that you, our valued client, are completely satisfied with the final result and work on achieving to make your vision come true. </p>
+                            <span><a href=#>Get started today!</a></span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
         </section>
 
-        <section class="light-bg" id="areas-served">
-            <h2>Areas We Serve</h2>
-            <p>We proudly offer our construction services in the following areas:</p>
-            <ul>
-                <li>City 1</li>
-                <li>City 2</li>
-                <li>City 3</li>
-                <!-- Add more areas served here -->
-            </ul>
+        <section class="light-bg" id="areas-served" style="background-image: url('images/services/list1.jpg'); background-size: cover; background-position: center;">
+            <div class=" container" style=" font-family: 'Arial' ; font-weight: bold; text-align:center;">
+                <h1>Areas We Serve</h1>
+                <p>We proudly offer our construction services in the following areas:</p>
+            </div>
+
+            <div class="container" style=" font-family: 'Arial' ; font-weight: bold;">
+                <div class="row d-flex justify-content-between">
+                    <div class="card col-md-5">
+                        <div class="list card-body" id="list1">
+
+                            <h2>New Jersey:</h2>
+                            <ul>
+                                <li>Bridgewater</li>
+                                <li>East Brunswick</li>
+                                <li>Edison</li>
+                                <li>Elizabeth</li>
+                                <li>Flemington</li>
+                                <li>Freehold</li>
+                                <li>Hamilton Township</li>
+                                <li>Lawrence Township</li>
+                                <li>New Brunswick</li>
+                                <li>Newark</li>
+                                <li>Princeton</li>
+                                <li>Somerville</li>
+                                <li>Trenton</li>
+                                <li>West Windsor Township</li>
+                                <li>Woodbridge</li>
+                            </ul>
+
+
+                        </div>
+
+
+                        <div class="list card-body" style="display:none;" id="list2">
+
+                            <h3>New York:</h3>
+                            <ul>
+                                <li>Freeport</li>
+                                <li>Garden City</li>
+                                <li>Hempstead</li>
+                                <li>Long Beach</li>
+                                <li>Mineola</li>
+                                <li>New Rochelle</li>
+                                <li>New York City (Bronx, Brooklyn, Manhattan, Queens, Staten Island)</li>
+                                <li>Valley Stream</li>
+                                <li>White Plains</li>
+                                <li>Yonkers</li>
+                            </ul>
+                        </div>
+                        <div class="list card-body" style="display:none;" id="list3">
+                            <h3>Pennsylvania:</h3>
+                            <ul>
+                                <li>Allentown</li>
+                                <li>Bensalem</li>
+                                <li>Bethlehem</li>
+                                <li>Doylestown</li>
+                                <li>Easton</li>
+                                <li>King of Prussia</li>
+                                <li>Lansdale</li>
+                                <li>Levittown</li>
+                                <li>Norristown</li>
+                                <li>Philadelphia</li>
+                                <li>Quakertown</li>
+                                <li>Warminster</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14HzHzCi07G5xeTIj_axNduJ6LLW_eK8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+
         </section>
 
 
@@ -224,6 +341,8 @@
     </section>
 
 </body>
+
+<script src="{{ asset('js/services.js') }}"></script>
 
 @include('partials.footer')
 
