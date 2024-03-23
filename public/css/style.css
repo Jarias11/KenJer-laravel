@@ -160,6 +160,14 @@
      margin-top: 6vh;
  }
 
+ .row>.col-md-4:first-child {
+     padding-left: 0;
+ }
+
+ .row>.col-md-4:last-child {
+     padding-right: 0;
+ }
+
  .card-img-top {
      max-width: 30%;
      /* Adjust the percentage as needed */

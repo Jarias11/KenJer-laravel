@@ -3,14 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md pr-md-5 mb-4 mb-md-0">
-                    <h3>About Us</h3>
-                    <p>Welcome to Ken-Jer, a trusted name in the construction industry for over 20 years. Founded and owned by Fanny Arias and Hernan Zhingre,
-                        our company has established a solid reputation for delivering exceptional craftsmanship and superior customer service.
-                        With a wealth of experience, we specialize in transforming basements, kitchens, and living rooms into beautiful, functional spaces.
-                        Our expertise extends to outdoor projects as well, including roofs, decks, gazebos, and various other areas of homes.
-                        At Ken-Jer, we are committed to exceeding your expectations and turning your visions into reality.
-                        Contact us today and let us bring our expertise and passion for construction to your next project.</p>
                     <ul class="list-unstyled quick-info mb-4">
+                        <h3>To Contact Us: </h3>
                         <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-phone"></span> +1 609-977-8713</a></li>
                         <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-envelope"></span> contact@ken-jer.com</a></li>
                     </ul>
