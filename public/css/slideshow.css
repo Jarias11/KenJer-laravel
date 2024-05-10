@@ -2,6 +2,32 @@
     position: relative;
 }
 
+#ShowForm {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    line-height: 1.5;
+    border: none;
+    cursor: pointer;
+}
+
+.slideShowText {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: linear-gradient(to bottom, rgb(62, 60, 60), rgb(36, 7, 179));
+
+    /* Make the gradient the text color instead of the element's background */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Make the text color transparent to reveal the background */
+    color: transparent;
+
+    /* Other styling for better visibility */
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .slideshow-container {
     top: 63px;
     position: relative;
