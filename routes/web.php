@@ -26,6 +26,7 @@ Route::get('/services', [ServicesController::class, 'index'])->name('services');
 
 // Gallery Page
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+Route::post('/upload-image', [GalleryController::class, 'uploadImage'])->name('image.upload');
 
 // Contact Page
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
@@ -38,9 +39,14 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+    // Profile routes
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    // Gallery routes
+    Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+    Route::post('/upload-image', [GalleryController::class, 'uploadImage'])->name('image.upload');
 });
 
 require __DIR__.'/auth.php';
