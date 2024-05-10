@@ -9,6 +9,10 @@
     <link href="{{ asset('css/form.css') }}" rel="stylesheet">
     <script src="{{ asset('js/modal.js') }}"></script>
     <script src="{{ asset('js/slideshow.js') }}"></script>
+    <script src="https://kit.fontawesome.com/489710b0e5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
 
 </head>
@@ -26,22 +30,23 @@
             <img class="slide-image" src="images/index/slide3.jpg" alt="Slide 3">
             <!-- Content overlay -->
             <div class="content-overlay ">
-                <div class="py-5 text-center text-black">
-                    <div class="container py-5">
-                        <div class="row py-5">
-                            <div class="mx-auto col-lg-11">
-                                <div id="SlideshowText border red" class="SlideshowText slide-up" style="background-color: rgba(255, 255, 255, 0.8); padding:20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);">
-                                    <h1 class=" display-3 mb-4">Get your free estimate!</h1>
-                                    <p class="lead mb-2">Contact us today</p>
-                                </div>
-                                <button id="ShowForm" class="btn btn-lg btn-light mt-2 mx-1 slide-right">Get Free Estimate</button>
-                                @include('partials.form')
+                <div class="container-fluid pl-2 text-center" style="position:absolute; top:5%">
+                    <div class="row">
+                        <div class="col">
+                            <div id="SlideShowText" class="slideShowText slide-up">
+                                <h1 class=" display-3 mb-4">GOOD PRICES, GOOD WORK!</h1>
                             </div>
+                        </div>
+                        <div class="col">
+                            @include('partials.form')
+                        </div>
+                        <div class="col">
+                            <h2>Get an estimate!</h2>
+                            <button id="ShowForm"><i class="fa-regular fa-pen-to-square"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="about dark-bg">
@@ -216,5 +221,6 @@
     <script src="{{ asset('js/transitions.js') }}"></script>
 </body>
 @include('partials.footer');
+
 
 </html>
