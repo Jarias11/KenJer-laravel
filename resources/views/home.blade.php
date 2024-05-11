@@ -60,7 +60,7 @@
     </section>
 
     <section class="about dark-bg">
-        <div class="container text-center">
+        <div class="text-center">
             <div class="row">
                 <div class="rounded border border-primary shadow col-md-11 mx-auto bg-white">
                     <h1 class="text-primary fw-bold fs-2 mt-2">About Ken-Jer</h1>
@@ -89,8 +89,9 @@
                             <div class="back">
                                 <!-- Back content -->
                                 <!-- Add your back content here -->
-                                <h5 class="card-title display-5">Free Estimates</h5>
-                                <p class="card-text lh-lg lead">This is the back</p>
+                                <a href="{{ route('contact') }}"><button class="btn btn-secondary">Contact Us</button></a>
+                                <h5 class=" card-title display-5">Free Estimates</h5>
+                                <p class="card-text lh-lg lead">Contact Us Today</p>
 
                             </div>
                         </div>
@@ -110,8 +111,9 @@
                             <div class="back">
                                 <!-- Back content -->
                                 <!-- Add your back content here -->
-                                <h5 class="card-title display-5">Back Title 2</h5>
-                                <p class="card-text lh-lg lead">This is the back content for the second card.</p>
+                                <a href="{{ route('services') }}"><button class="btn btn-secondary">Services</button></a>
+                                <h5 class="card-title display-5">See Services</h5>
+                                <p class="card-text lh-lg lead">Check out the services we offer!</p>
                             </div>
                         </div>
                     </div>
@@ -130,6 +132,7 @@
                             <div class="back">
                                 <!-- Back content -->
                                 <!-- Add your back content here -->
+                                <a href="{{ route('services') }}"><button class="btn btn-secondary">Services</button></a>
                                 <h5 class="card-title display-5">Back Title 3</h5>
                                 <p class="card-text lh-lg lead">This is the back content for the third card.</p>
                             </div>
@@ -152,7 +155,11 @@
             <div class="row">
                 <!-- Column for Services -->
                 <div class="col-md-6">
-                    <div class="text-center">
+
+
+
+                    <div class="big-card mb-4 text-center">
+
                         <h2>Our Services</h2>
                         <p>Discover the comprehensive range of construction services we offer at Ken-Jer. From indoor renovations to outdoor transformations, our skilled team is committed to bringing your vision to life.</p>
                         <p>Explore our services further by clicking the button below:</p>
@@ -160,6 +167,13 @@
                             <a href="services.html" class="btn btn-primary">Explore Services</a>
                         </div>
                     </div>
+
+
+
+
+
+
+
                 </div>
                 <!-- Column for Gallery -->
                 <div class="col-md-6">
