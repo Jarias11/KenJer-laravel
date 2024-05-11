@@ -1,5 +1,3 @@
-
-
 <div class="formbold-main-wrapper">
     <!-- Author: FormBold Team -->
     <!-- Learn More: https://formbold.com -->
@@ -7,7 +5,8 @@
 
         <form id="ContactForm" method="POST">
             @csrf
-            <h2 class="form-title">Get Free Estimate Today</h2>
+            <button id="CloseForm" class="close-button">X</button> <!-- Close button -->
+            <h2 class="form-title">Free Estimate</h2>
             <div class=" formbold-mb-5">
                 <label for="fullname" class="formbold-form-label"> Full Name </label>
                 <input type="text" name="fullname" id="fullname" placeholder="Full Name" class="formbold-form-input" required />

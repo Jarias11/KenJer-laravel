@@ -205,10 +205,11 @@
 
             <div class="container" style=" font-family: 'Arial' ; font-weight: bold;">
                 <div class="row d-flex justify-content-between">
-                    <div class="card col-md-5">
+                    <div class="card col-md-5 text-center" style="background-color: rgba(255, 255, 255, 0.9);">
+                        <h1>Counties We Service!</h1>
                         <div class="list card-body" id="list1">
 
-                            <h2>New Jersey:</h2>
+                            <h2 style="text-decoration: underline;">New Jersey</h2>
                             <ul>
                                 <li>Bridgewater</li>
                                 <li>East Brunswick</li>
@@ -233,7 +234,7 @@
 
                         <div class="list card-body" style="display:none;" id="list2">
 
-                            <h3>New York:</h3>
+                            <h2 style="text-decoration: underline;">New York</h2>
                             <ul>
                                 <li>Freeport</li>
                                 <li>Garden City</li>
@@ -248,7 +249,7 @@
                             </ul>
                         </div>
                         <div class="list card-body" style="display:none;" id="list3">
-                            <h3>Pennsylvania:</h3>
+                            <h2 style="text-decoration: underline;">Pennsylvania</h2>
                             <ul>
                                 <li>Allentown</li>
                                 <li>Bensalem</li>
@@ -267,7 +268,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class=" col-md-5">
                         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14HzHzCi07G5xeTIj_axNduJ6LLW_eK8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
                     </div>
                 </div>

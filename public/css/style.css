@@ -155,7 +155,26 @@
          opacity: 1;
      }
  }
+.speech-bubble {
+    position: relative;
+    background: #2c29cb;
+    border-radius: .9em;
+    font-weight: bolder;
+}
 
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #2c29cb;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
  .about {
      margin-top: 6vh;
  }

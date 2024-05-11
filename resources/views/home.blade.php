@@ -40,9 +40,19 @@
                         <div class="col">
                             @include('partials.form')
                         </div>
+
                         <div class="col">
-                            <h2>Get an estimate!</h2>
-                            <button id="ShowForm"><i class="fa-regular fa-pen-to-square"></i></button>
+                            <div class="speech-bubble shake-element" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+
+                                <h2 class="pt-3">Get an estimate!</h2>
+                                <p1 class="mt-3">Contact Us Today</p1>
+                                <div>
+                                    <button class=" rounded mb-2" id="ShowForm"><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -165,62 +175,11 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
     </section>
 
-
-
-
-    <section class="Services">
-        <div class="Services-container">
-            <div class="text-Service-container">
-                <h2 class="Title">Services</h2>
-                <p class="Service-description">Ken-Jer Construction is the leading, residential, and commercial contractors in central New Jersey. Serving for decades with a full team of experience professionals to create amazing projects designed by our customers.</p>
-            </div>
-            <div class="SButton">
-
-                <!-- <button class="toServices" onclick="goToServices()">View Services</button> -->
-
-            </div>
-
-
-
-
-            <div class="card-Holder">
-                <div class="card">
-                    <!-- <img src="images/noteIcon.png"> -->
-                    <h3>Free Estimates</h3>
-                    <p2>We give 100% free estimates and consultations. Give us a call or fill out form above to reach us anytime 24/7. We are dedicated to working with you to build your dream projects! </p2>
-                </div>
-                <div class="card">
-                    <!-- <img src="images/toolsIcon.png"> -->
-                    <h3>Indoor Construction</h3>
-                    <p2>We are experienced in many areas of the inside of the home. Working on basements, kitckens, bedrooms, and more. Check out our past projects</p2>
-                </div>
-                <div class="card">
-                    <!-- <img src="images/brickIcon.png"> -->
-                    <h3>Outdoor Construction</h3>
-                    <p2>From decks, patios, and gazeebos, our experience working outside is vast and these are just a few examples. Check out our past projects</p2>
-                </div>
-                <div class="card">
-                    <!-- <img src="images/noteIcon.png"> -->
-                    <h3>Other Services</h3>
-                    <p2>Dont see what your looking for above. See our other services available. We are ready to tackle any idea you can think of!</p2>
-                </div>
-
-            </div>
-        </div>
-
-
-    </section>
     <script src="{{ asset('js/transitions.js') }}"></script>
 </body>
-@include('partials.footer');
+@include('partials.footer')
 
 
 </html>

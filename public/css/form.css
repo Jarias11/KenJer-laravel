@@ -7,7 +7,19 @@
 body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
-
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #f00;
+    /* Red background color */
+    color: #fff;
+    /* White text color */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
 .form-title {
     font-size: 24px;
     font-weight: bold;
@@ -123,6 +135,57 @@ body {
     width: 100%;
 }
 
+@keyframes shake {
+    0% {
+            transform: rotate(0deg);
+        }
+
+        10% {
+            transform: rotate(-3deg);
+        }
+
+        /* Extend each keyframe to make the animation last longer */
+        20% {
+            transform: rotate(3deg);
+        }
+
+        30% {
+            transform: rotate(-3deg);
+        }
+
+        40% {
+            transform: rotate(3deg);
+        }
+
+        50% {
+            transform: rotate(-3deg);
+        }
+
+        60% {
+            transform: rotate(3deg);
+        }
+
+        70% {
+            transform: rotate(-3deg);
+        }
+
+        80% {
+            transform: rotate(3deg);
+        }
+
+        90% {
+            transform: rotate(-3deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+}
+
+.shake-element {
+    animation: shake 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
 
 @media (min-width: 540px) {
     .sm\:w-half {

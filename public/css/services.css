@@ -157,10 +157,12 @@ h1,
 
 #list-container {
     display: flex;
+
 }
 
 .list {
     margin-right: 20px;
+
 }
 
 .list ul {

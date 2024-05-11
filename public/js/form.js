@@ -2,12 +2,19 @@ $(() => {
     // variables
     const $FormButton = $('#ShowForm');
     const submitUrl = $('#SubmitUrl').val();
+    const $CloseButton =$('#CloseForm');
 
     $FormButton.click(() => {
         $('#ContactFormContainer').show();
         $('#ShowForm').hide();
         $('#SlideshowText').hide();
     });
+    $CloseButton.click(() => {
+        $('#ContactFormContainer').hide();
+        $('#ShowForm').show();
+        $('#SlideshowText').hide();
+    });
+
     const $Form = $('#ContactForm')
     $Form.submit(function (event) {
         event.preventDefault();
