@@ -30,7 +30,7 @@
             <img class="slide-image" src="images/index/slide3.jpg" alt="Slide 3">
             <!-- Content overlay -->
             <div class="content-overlay ">
-                <div class="container-fluid pl-2 text-center" style="position:absolute; top:5%">
+                <div class="container-fluid pl-2 text-center" style="position:absolute; top:2.5%">
                     <div class="row">
                         <div class="col">
                             <div id="SlideShowText" class="slideShowText slide-up">
@@ -55,6 +55,24 @@
 
                         </div>
                     </div>
+                </div>
+                <div class="container intro-text text-center">
+                    <p1>
+                        Residential Construction Experts
+                    </p1>
+                    <h1>
+                        Discover Ken-Jer! Highly Acclaimed Across New Jersey, New York & Pennsylvania and Nearby Regions
+                    </h1>
+
+                    <p2>
+                        At Ken-Jer, we're committed to bringing your dreams to life.
+                        Widely respected across New Jersey, New York, Pennsylvania, and neighboring areas,
+                        we specialize exclusively in residential construction projects.
+                        With our steadfast dedication to quality and precision,
+                        we'll transform your vision into a remarkable reality, ensuring unmatched excellence at every phase.
+                        Trust Ken-Jer to elevate your residential construction projects
+                        with unparalleled expertise and unwavering professionalism.
+                    </p2>
                 </div>
             </div>
     </section>
