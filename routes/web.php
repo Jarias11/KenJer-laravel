@@ -6,6 +6,7 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\InvoiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,11 @@ use App\Http\Controllers\ProfileController;
 
 // Home Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+//test
+Route::get('/test', function () {
+    return view('/invoices/create'); // 'test' is the name of your view file without the '.blade.php' extension
+});
 
 // Services Page
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
@@ -47,6 +53,11 @@ Route::middleware('auth')->group(function () {
     // Gallery routes
     Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
     Route::post('/upload-image', [GalleryController::class, 'uploadImage'])->name('image.upload');
+
+    // Invoice routes
+    Route::get('/admin/invoices/create', [InvoiceController::class, 'create'])->name('invoices.create');
+    Route::post('/admin/invoices', [InvoiceController::class, 'store'])->name('invoices.store');
+    Route::get('/admin/invoices/{invoice}', [InvoiceController::class, 'show'])->name('invoices.show');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
