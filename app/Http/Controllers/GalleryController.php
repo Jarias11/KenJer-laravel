@@ -32,7 +32,7 @@ class GalleryController extends Controller
 
         $image = new images([
             'filename' => $request->file('image')->getClientOriginalName(),
-            'path' => $imagePath,
+            'path' => 'storage/' . $imagePath,
             'description' => 'Description for ' . $tag->name . ' image',
         ]);
 

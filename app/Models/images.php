@@ -15,5 +15,5 @@ class images extends Model
     {
         return $this->belongsToMany(tags::class, 'img_tags');
     }
-    
+
 }
