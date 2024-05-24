@@ -7,12 +7,15 @@ $(() => {
     $FormButton.click(() => {
         $('#ContactFormContainer').show();
         $('#ShowForm').hide();
-        $('#SlideshowText').hide();
+        $('#SlideShowText').hide();
+        $('#Col').hide();
+
     });
     $CloseButton.click(() => {
         $('#ContactFormContainer').hide();
         $('#ShowForm').show();
-        $('#SlideshowText').hide();
+        $('#Col').show();
+        $('#SlideShowText').show();
     });
 
     const $Form = $('#ContactForm')

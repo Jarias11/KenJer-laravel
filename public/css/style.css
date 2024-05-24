@@ -3,9 +3,60 @@
 }
 
 .intro-text {
-    border: blue solid 3px;
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid blue;
+    background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+    color: #2c3e50;
     font-weight: bolder;
+    padding: 40px 20px;
+    /* Increased padding to accommodate bolts */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.2) inset;
+    text-align: center;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.bolt {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background: linear-gradient(145deg, #2c3e50, #6d96b1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 -2px 4px rgba(255, 255, 255, 0.3) inset;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    z-index: 1;
+}
+
+.bolt::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background: #bdc3c7;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 -2px 2px rgba(255, 255, 255, 0.3) inset;
+}
+
+.bolt-1 {
+    top: 8px;
+    left: 10px;
+}
+
+.bolt-2 {
+    top: 8px;
+    right: 10px;
+}
+
+.bolt-3 {
+    bottom: 10px;
+    left: 10px;
+}
+
+.bolt-4 {
+    bottom: 10px;
+    right: 10px;
 }
 
 #RequestModal .page-body {
@@ -166,25 +217,85 @@
     }
 }
 
-.speech-bubble {
+.sticky-note {
     position: relative;
-    background: #2c29cb;
-    border-radius: .9em;
+    background: #ffeb3b;
+    /* Yellow color for sticky note */
+    border-radius: 5px;
+    /* Slightly rounded corners */
     font-weight: bolder;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    color: #333;
+    /* Darker text for contrast */
+    overflow: hidden;
+    /* Hide the overflow to fix the extra part sticking out */
 }
 
-.speech-bubble:after {
+.sticky-note:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: #ffeb3b;
+    /* Same yellow color */
+    bottom: -10px;
+    /* Adjusted to hide the extra part */
+    right: 30px;
+    /* Adjusted to hide the extra part */
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.1);
+    transform: rotate(70deg);
+    transform-origin: 100% 100%;
+}
+
+.thumbtack {
+    position: absolute;
+    top: 0px;
     left: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-top-color: #2c29cb;
-    border-bottom: 0;
-    margin-left: -20px;
-    margin-bottom: -20px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.thumbtack::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 15px;
+    background: red;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.dark-yellow-button {
+    background-color: #f5c71a;
+    /* Darker yellow */
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.dark-yellow-button:hover {
+    background-color: #e0b716;
+    /* Slightly darker on hover */
 }
 
 .about {
@@ -284,4 +395,68 @@
     /* Dark grey background color */
     padding: 50px 0;
     /* Adjust padding as needed */
+}
+.big-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.big-card h2 {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.big-card p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.big-card .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+.gallery-section {
+    background: #e9ecef;
+    padding: 40px 0;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    color: #6c757d;
+}
+
+.gallery-section p {
+    font-size: 1.2rem;
+    color: #343a40;
+}
+
+.gallery-section .btn {
+    background: #6c757d;
+    color: #fff;
+}
+
+.where-we-serve-section {
+    background: #fff3cd;
+    padding: 40px 0;
+}
+
+.where-we-serve-section h2 {
+    font-size: 2.5rem;
+    color: #856404;
+}
+
+.where-we-serve-section p {
+    font-size: 1.2rem;
+    color: #856404;
+}
+
+.where-we-serve-section .btn {
+    background: #856404;
+    color: #fff;
 }

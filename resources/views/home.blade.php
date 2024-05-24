@@ -30,26 +30,24 @@
             <img class="slide-image" src="images/index/slide3.jpg" alt="Slide 3">
             <!-- Content overlay -->
             <div class="content-overlay ">
-                <div class="container-fluid pl-2 text-center" style="position:absolute; top:2.5%">
+                <div class="container-fluid pl-2 text-center" style="position:absolute; top:1%">
                     <div class="row">
                         <div class="col">
                             <div id="SlideShowText" class="slideShowText slide-up">
                                 <h1 class=" display-3 mb-4">GOOD PRICES, GOOD WORK!</h1>
+
                             </div>
-                        </div>
-                        <div class="col">
                             @include('partials.form')
                         </div>
 
-                        <div class="col">
-                            <div class="speech-bubble shake-element" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
-
+                        <div class="col" id="Col">
+                            <div class="sticky-note shake-element" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); z-index: 2;">
                                 <h2 class="pt-3">Get an estimate!</h2>
                                 <p1 class="mt-3">Contact Us Today</p1>
                                 <div>
-                                    <button class=" rounded mb-2" id="ShowForm"><i class="fa-regular fa-pen-to-square"></i></button>
-
+                                    <button class="rounded mb-2 dark-yellow-button" id="ShowForm"><i class="fa-regular fa-pen-to-square"></i></button>
                                 </div>
+                                <div class="thumbtack"></div>
                             </div>
 
 
@@ -57,6 +55,11 @@
                     </div>
                 </div>
                 <div class="container intro-text text-center">
+                    <div class="bolt bolt-1"></div>
+                    <div class="bolt bolt-2"></div>
+                    <div class="bolt bolt-3"></div>
+                    <div class="bolt bolt-4"></div>
+
                     <p1>
                         Residential Construction Experts
                     </p1>
@@ -150,9 +153,9 @@
                             <div class="back">
                                 <!-- Back content -->
                                 <!-- Add your back content here -->
-                                <a href="{{ route('services') }}"><button class="btn btn-secondary">Services</button></a>
-                                <h5 class="card-title display-5">Back Title 3</h5>
-                                <p class="card-text lh-lg lead">This is the back content for the third card.</p>
+                                <a href="{{ route('services') }}#faq"><button class="btn btn-secondary">Services</button></a>
+                                <h5 class="card-title display-5">FAQ</h5>
+                                <p class="card-text lh-lg lead">See the most common questions answered</p>
                             </div>
                         </div>
                     </div>
@@ -168,45 +171,31 @@
 
         <!-- <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a> -->
     </section>
-    <section class="services">
-        <div class="container">
-            <div class="row">
-                <!-- Column for Services -->
-                <div class="col-md-6">
-
-
-
-                    <div class="big-card mb-4 text-center">
-
-                        <h2>Our Services</h2>
-                        <p>Discover the comprehensive range of construction services we offer at Ken-Jer. From indoor renovations to outdoor transformations, our skilled team is committed to bringing your vision to life.</p>
-                        <p>Explore our services further by clicking the button below:</p>
-                        <div class="mt-4">
-                            <a href="services.html" class="btn btn-primary">Explore Services</a>
-                        </div>
+    <section class="services pt-3">
+        <div class="row">
+            <!-- Column for Gallery -->
+            <div class="col-md-6">
+                <div class="big-card mb-4 text-center gallery-section">
+                    <h2>Gallery</h2>
+                    <p>Explore our gallery to see examples of our past projects and works. Get inspired and envision your own construction dreams becoming a reality.</p>
+                    <p>Click the button below to view our gallery:</p>
+                    <div class="mt-4">
+                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
                     </div>
-
-
-
-
-
-
-
                 </div>
-                <!-- Column for Gallery -->
-                <div class="col-md-6">
-                    <div class="text-center">
-                        <h2>Gallery</h2>
-                        <p>Explore our gallery to see examples of our past projects and works. Get inspired and envision your own construction dreams becoming a reality.</p>
-                        <p>Click the button below to view our gallery:</p>
-                        <div class="mt-4">
-                            <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
-                        </div>
+            </div>
+            <!-- Column for Where We Serve -->
+            <div class="col-md-6">
+                <div class="big-card mb-4 text-center where-we-serve-section">
+                    <h2>Where We Serve</h2>
+                    <p>We proudly serve the communities across New Jersey, New York, Pennsylvania, and nearby regions. Our team is dedicated to delivering top-notch construction services to all our clients in these areas.</p>
+                    <p>Click the button below to see the regions we serve:</p>
+                    <div class="mt-4">
+                        <a href="services.html#service-regions" class="btn btn-secondary">See Regions</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
     </section>
 
     <script src="{{ asset('js/transitions.js') }}"></script>

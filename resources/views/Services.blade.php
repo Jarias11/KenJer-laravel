@@ -269,7 +269,7 @@
                     </div>
 
                     <div class=" col-md-5">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14HzHzCi07G5xeTIj_axNduJ6LLW_eK8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14HzHzCi07G5xeTIj_axNduJ6LLW_eK8&ehbc=2E312F&noprof=1" width=100% height="480"></iframe>
                     </div>
                 </div>
 

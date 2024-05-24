@@ -24,8 +24,25 @@
     color: transparent;
 
     /* Other styling for better visibility */
-    font-size: 48px;
+
     font-weight: bold;
+}
+
+@media (max-width: 764px) {
+    .display-3 {
+        font-size: 50px;
+    }
+
+    .intro-text h1 {
+        font-size: 32px;
+        /* Smaller font size for screens 764px or less */
+    }
+}
+
+@media (max-width: 505px) {
+    .display-3 {
+        font-size: 35px;
+    }
 }
 
 .slideshow-container {

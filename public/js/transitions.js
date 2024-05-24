@@ -15,7 +15,7 @@ ScrollReveal().reveal('.slide-right', {
     interval: 200 // Interval between elements (if multiple elements are selected)
 });
 ScrollReveal().reveal('.card', {
-    delay: 300,
+    delay: 200,
     distance: '400px',
     origin: 'bottom',
     duration: 2000,
