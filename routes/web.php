@@ -26,7 +26,6 @@ Route::get('/services', [ServicesController::class, 'index'])->name('services');
 
 // Gallery Page
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
-Route::post('/upload-image', [GalleryController::class, 'uploadImage'])->name('image.upload');
 
 // Contact Page
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
@@ -38,7 +37,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth', 'can:admin')->group(function () {
     // Profile routes
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -47,6 +46,8 @@ Route::middleware('auth')->group(function () {
     // Gallery routes
     //Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
     Route::post('/upload-image', [GalleryController::class, 'uploadImage'])->name('image.upload');
+    Route::post('/tags', [GalleryController::class, 'storeTag'])->name('tags.store');
+
 });
 
 require __DIR__.'/auth.php';

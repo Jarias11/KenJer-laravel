@@ -1,0 +1,88 @@
+.main {
+    background-color: #343a40;
+    position: relative;
+    color: white;
+    /* Set the text color to white */
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-title {
+    font-weight: bold;
+    font-size: 2rem;
+    /* Adjust size as needed */
+    color: white;
+    position: absolute;
+    top: 10%;
+    /* Vertically center the title */
+    left: 15px;
+        /* Adjust the left value to move the title more to the left */
+    transform: translateY(-50%);
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: Add a background for better readability */
+    z-index: 1;
+    /* Ensure the title is on top of the carousel */
+}
+
+.carousel-item img {
+    width: 100%;
+    /* Ensure the image takes the full width of the carousel */
+    height: 50vh;
+    /* Set a fixed height for the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow behind images */
+    object-fit: cover;
+    /* Cover the element's box, cropping the image if necessary */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for transform and box-shadow */
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Enhance the shadow on hover */
+}
+
+.carousel-item .col {
+    flex: 1 0 33%;
+    /* Ensure each image takes up one-third of the container */
+    max-width: 33%;
+    /* Ensure each image takes up one-third of the container */
+    overflow: hidden;
+    /* Hide overflow to ensure cut-off effect */
+}
+
+.d-flex {
+    display: flex !important;
+    /* Use flexbox to layout images side by side */
+}
+.form-title {
+    background-color: #343a40;
+    /* Dark grey */
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-container {
+    background-color: #f8f9fa;
+    /* Light grey */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-container-dark {
+    background-color: #e9ecef;
+    /* Slightly darker grey */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
