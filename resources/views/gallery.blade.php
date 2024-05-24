@@ -7,6 +7,7 @@
 
 <body>
     @include('partials.navbar')
+    <?php phpinfo(); ?>
     <section class="pt-3">
         <div class="container pt-5">
             @foreach ($tags as $tag)

@@ -19,7 +19,7 @@ class GalleryController extends Controller
     public function uploadImage(Request $request)
     {
         $request->validate([
-            'image' => 'required|image|max:10240',  // Max 2MB file
+            'image' => 'required|image|max:20480',  // Max 20MB file
             'tag' => 'required|exists:tags,id'    // Ensure the tag ID exists
         ]);
 

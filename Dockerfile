@@ -27,6 +27,9 @@ WORKDIR /var/www
 # Copy existing application directory contents
 COPY . /var/www
 
+# Copy custom php.ini configuration
+COPY php.ini /usr/local/etc/php/
+
 # Install dependencies
 RUN composer install
 
