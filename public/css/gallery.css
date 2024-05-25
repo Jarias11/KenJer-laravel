@@ -3,10 +3,12 @@
     position: relative;
     color: white;
     /* Set the text color to white */
+
 }
 
 .carousel-container {
     position: relative;
+    max-width: 1050px;
 }
 
 .carousel-title {
@@ -18,7 +20,7 @@
     top: 10%;
     /* Vertically center the title */
     left: 15px;
-        /* Adjust the left value to move the title more to the left */
+    /* Adjust the left value to move the title more to the left */
     transform: translateY(-50%);
     padding: 5px;
     background: rgba(0, 0, 0, 0.5);
@@ -30,7 +32,8 @@
 .carousel-item img {
     width: 100%;
     /* Ensure the image takes the full width of the carousel */
-    height: 50vh;
+
+    height: 30vh;
     /* Set a fixed height for the images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Add shadow behind images */
@@ -54,22 +57,38 @@
     /* Ensure each image takes up one-third of the container */
     overflow: hidden;
     /* Hide overflow to ensure cut-off effect */
+    padding: 2px;
 }
 
 .d-flex {
     display: flex !important;
     /* Use flexbox to layout images side by side */
 }
-.form-title {
-    background-color: #343a40;
-    /* Dark grey */
-    color: white;
-    padding: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    text-align: center;
-    margin-top: 0;
-}
+
+ /* Modal image styles */
+ .modal-dialog {
+     max-width: 70vw;
+     max-height: 90vh;
+     height: auto;
+     margin: auto;
+ }
+
+ .modal-body {
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: transparent;
+ }
+ .modal-content {
+     background: transparent;
+ }
+
+ .modal-body img {
+     width: auto;
+     max-height: 90vh;
+     object-fit: contain;
+ }
 
 .form-container {
     background-color: #f8f9fa;

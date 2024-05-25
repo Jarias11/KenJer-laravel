@@ -205,75 +205,85 @@
 
             <div class="container" style=" font-family: 'Arial' ; font-weight: bold;">
                 <div class="row d-flex justify-content-between">
-                    <div class="card col-md-5 text-center" style="background-color: rgba(255, 255, 255, 0.9);">
-                        <h1>Counties We Service!</h1>
-                        <div class="list card-body" id="list1">
+                    <div class="row justify-content-center" id="list-container">
+                        <!-- Column for Counties We Service -->
+                        <div class="col-md-12">
+                            <div class="modern-card text-center">
+                                <h1>Our Service Areas</h1>
+                                <div class="row justify-content-center" id="list-container">
+                                    <!-- Column for New Jersey -->
+                                    <div class="modern-card text-center">
 
-                            <h2 style="text-decoration: underline;">New Jersey</h2>
-                            <ul>
-                                <li>Bridgewater</li>
-                                <li>East Brunswick</li>
-                                <li>Edison</li>
-                                <li>Elizabeth</li>
-                                <li>Flemington</li>
-                                <li>Freehold</li>
-                                <li>Hamilton Township</li>
-                                <li>Lawrence Township</li>
-                                <li>New Brunswick</li>
-                                <li>Newark</li>
-                                <li>Princeton</li>
-                                <li>Somerville</li>
-                                <li>Trenton</li>
-                                <li>West Windsor Township</li>
-                                <li>Woodbridge</li>
-                            </ul>
+                                        <div class="list card-body">
+                                            <h2>New Jersey</h2>
+                                            <ul>
+                                                <li>Bridgewater</li>
+                                                <li>East Brunswick</li>
+                                                <li>Edison</li>
+                                                <li>Elizabeth</li>
+                                                <li>Flemington</li>
+                                                <li>Freehold</li>
+                                                <li>Hamilton Township</li>
+                                                <li>Lawrence Township</li>
+                                                <li>New Brunswick</li>
+                                                <li>Newark</li>
+                                                <li>Princeton</li>
+                                                <li>Somerville</li>
+                                                <li>Trenton</li>
+                                                <li>West Windsor Township</li>
+                                                <li>Woodbridge</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Column for New York -->
+                                    <div class="modern-card text-center">
 
+                                        <div class="list card-body">
+                                            <h2>New York</h2>
+                                            <ul>
+                                                <li>Freeport</li>
+                                                <li>Garden City</li>
+                                                <li>Hempstead</li>
+                                                <li>Long Beach</li>
+                                                <li>Mineola</li>
+                                                <li>New Rochelle</li>
+                                                <li>New York City (Bronx, Brooklyn, Manhattan, Queens, Staten Island)</li>
+                                                <li>Valley Stream</li>
+                                                <li>White Plains</li>
+                                                <li>Yonkers</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Column for Pennsylvania -->
+                                    <div class="modern-card text-center">
+                                        
+                                        <div class="list card-body">
+                                            <h2>Pennsylvania</h2>
+                                            <ul>
+                                                <li>Allentown</li>
+                                                <li>Bensalem</li>
+                                                <li>Bethlehem</li>
+                                                <li>Doylestown</li>
+                                                <li>Easton</li>
+                                                <li>King of Prussia</li>
+                                                <li>Lansdale</li>
+                                                <li>Levittown</li>
+                                                <li>Norristown</li>
+                                                <li>Philadelphia</li>
+                                                <li>Quakertown</li>
+                                                <li>Warminster</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div>
+                                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14HzHzCi07G5xeTIj_axNduJ6LLW_eK8&ehbc=2E312F&noprof=1" width=100% height="480"></iframe>
+                            </div>
                         </div>
 
-
-                        <div class="list card-body" style="display:none;" id="list2">
-
-                            <h2 style="text-decoration: underline;">New York</h2>
-                            <ul>
-                                <li>Freeport</li>
-                                <li>Garden City</li>
-                                <li>Hempstead</li>
-                                <li>Long Beach</li>
-                                <li>Mineola</li>
-                                <li>New Rochelle</li>
-                                <li>New York City (Bronx, Brooklyn, Manhattan, Queens, Staten Island)</li>
-                                <li>Valley Stream</li>
-                                <li>White Plains</li>
-                                <li>Yonkers</li>
-                            </ul>
-                        </div>
-                        <div class="list card-body" style="display:none;" id="list3">
-                            <h2 style="text-decoration: underline;">Pennsylvania</h2>
-                            <ul>
-                                <li>Allentown</li>
-                                <li>Bensalem</li>
-                                <li>Bethlehem</li>
-                                <li>Doylestown</li>
-                                <li>Easton</li>
-                                <li>King of Prussia</li>
-                                <li>Lansdale</li>
-                                <li>Levittown</li>
-                                <li>Norristown</li>
-                                <li>Philadelphia</li>
-                                <li>Quakertown</li>
-                                <li>Warminster</li>
-                            </ul>
-
-                        </div>
                     </div>
-
-                    <div class=" col-md-5">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14HzHzCi07G5xeTIj_axNduJ6LLW_eK8&ehbc=2E312F&noprof=1" width=100% height="480"></iframe>
-                    </div>
-                </div>
-
-            </div>
 
 
         </section>

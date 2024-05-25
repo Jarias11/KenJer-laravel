@@ -7,12 +7,12 @@
 <body>
     @include('partials.navbar')
     <section class="main pt-3">
-        <div class="container pt-5">
+        <div class="container pt-5" style="padding: 0;">
             @foreach ($tags as $tag)
             @php
             $carouselId = 'carousel_' . $tag->id;
             @endphp
-            <div class="carousel-container pb-2">
+            <div class="carousel-container pb-2 pt-3">
                 <h3 class="carousel-title">{{ $tag->name }}</h3>
                 <div id="{{ $carouselId }}" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -26,7 +26,7 @@
                             <div class="d-flex">
                                 @foreach ($imageChunk as $image)
                                 <div class="col">
-                                    <img src="{{ asset($image->path) }}" class="d-block w-100" alt="{{ $image->description }}">
+                                    <img src="{{ asset($image->path) }}" class="d-block w-100" alt="{{ $image->description }}" data-toggle="modal" data-target="#imageModalLarge" data-src="{{ asset($image->path) }}">
                                 </div>
                                 @endforeach
                             </div>
@@ -46,11 +46,33 @@
             @endforeach
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="imageModalLarge" tabindex="-1" aria-labelledby="imageModalLargeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" id="modalImageLarge" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     @can('admin')
 
     @include('partials.gallery_forms')
-    
+
     @endcan
+
+    <script>
+        $('#imageModalLarge').on('show.bs.modal', function(event) {
+            var img = $(event.relatedTarget); // Image that triggered the modal
+            var src = img.data('src'); // Extract info from data-* attributes
+            var modal = $(this);
+            modal.find('#modalImageLarge').attr('src', src);
+        });
+        $('#modalImageLarge').on('click', function() {
+            $('#imageModalLarge').modal('hide');
+        });
+    </script>
 </body><br><br>
 
 @include('partials.footer')

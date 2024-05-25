@@ -26,18 +26,3 @@ function toggleClasses(evt) {
         }
     }
 }
-let currentIndex = 1;
-const totalContents = 3;
-
-function changeContent() {
-    const currentContent = document.getElementById(`list${currentIndex}`);
-    currentContent.style.display = 'none';
-
-    currentIndex = (currentIndex % totalContents) + 1;
-
-    const nextContent = document.getElementById(`list${currentIndex}`);
-    nextContent.style.display = 'block';
-}
-
-// Change content every 3 seconds
-setInterval(changeContent, 3000);

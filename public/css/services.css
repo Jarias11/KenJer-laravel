@@ -36,6 +36,21 @@
 .text-l {
     font-size: 1.7rem;
 }
+@media (max-width: 764px) {
+    .text-xxl {
+            font-size: 4rem;
+            /* You can adjust the value as needed */
+        }
+
+        .text-xl {
+            font-size: 1rem;
+        }
+
+        .text-l {
+            font-size: 0.7rem;
+        }
+}
+
 
 .overlay {
     position: absolute;
@@ -155,19 +170,66 @@ h1,
     }
 }
 
-#list-container {
-    display: flex;
-
+.modern-card {
+    background-color: #e2e6ea;
+    /* Slightly darker grey/blue background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    flex: 1;
+    /* Make cards flexible to fit side by side */
 }
 
-.list {
-    margin-right: 20px;
-
+.modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.list ul {
+.modern-card h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.modern-card h2 {
+    font-size: 1.5rem;
+    color: #6c757d;
+    /* Grey color for h2 */
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.modern-card h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 10px auto 0;
+    height: 2px;
+    background-color: #6c757d;
+}
+
+.modern-card ul {
     list-style-type: none;
     padding: 0;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.modern-card ul li {
+    margin: 5px 0;
+}
+
+
+
+#list-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Wrap cards if there isn't enough space */
 }
 
 .list img {
