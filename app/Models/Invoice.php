@@ -14,13 +14,16 @@ class Invoice extends Model
         'client_name',
         'client_address',
         'invoice_date',
-        'description',
-        'amount',
         'tax_rate',
         'total',
+        'items',
     ];
 
     protected $dates = [
         'invoice_date',
+    ];
+
+    protected $casts = [
+        'items' => 'array', // Cast items field to array
     ];
 }

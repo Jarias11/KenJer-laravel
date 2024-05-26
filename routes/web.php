@@ -55,9 +55,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/upload-image', [GalleryController::class, 'uploadImage'])->name('image.upload');
 
     // Invoice routes
-    Route::get('/admin/invoices/create', [InvoiceController::class, 'create'])->name('invoices.create');
-    Route::post('/admin/invoices', [InvoiceController::class, 'store'])->name('invoices.store');
-    Route::get('/admin/invoices/{invoice}', [InvoiceController::class, 'show'])->name('invoices.show');
+
+    Route::get('/invoices', [InvoiceController::class, 'index'])->name('invoices.index');
+    Route::get('/invoices/create', [InvoiceController::class, 'create'])->name('invoices.create');
+    Route::post('/invoices', [InvoiceController::class, 'store'])->name('invoices.store');
+    Route::get('/invoices/{invoice}', [InvoiceController::class, 'show'])->name('invoices.show');
 });
 
 require __DIR__ . '/auth.php';

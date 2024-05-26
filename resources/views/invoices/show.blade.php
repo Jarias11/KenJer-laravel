@@ -39,7 +39,6 @@
         <p>Good work good prices!</p>
     </div>
     <div class="invoice-details">
-        
         <p>Invoice #: {{ $invoice->invoice_number }}</p>
     </div>
     <div class="client-details">
@@ -56,15 +55,17 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($invoice->items as $item)
                 <tr>
-                    <td>{{ $invoice->description }}</td>
-                    <td>${{ number_format($invoice->amount, 2) }}</td>
+                    <td>{{ $item['description'] }}</td>
+                    <td>${{ number_format($item['amount'], 2) }}</td>
                 </tr>
+                @endforeach
             </tbody>
             <tfoot>
                 <tr>
                     <th>Subtotal</th>
-                    <td>${{ number_format($invoice->amount, 2) }}</td>
+                    <td>${{ number_format($invoice->total, 2) }}</td>
                 </tr>
                 <tr>
                     <th>Tax Rate</th>
@@ -72,7 +73,7 @@
                 </tr>
                 <tr>
                     <th>Total</th>
-                    <td>${{ number_format($invoice->total, 2) }}</td>
+                    <td>${{ number_format($invoice->total * (1 + $invoice->tax_rate / 100), 2) }}</td>
                 </tr>
             </tfoot>
         </table>
