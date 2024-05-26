@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\tags;
 use App\Models\images;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 
 class GalleryController extends Controller
 {
@@ -69,5 +71,26 @@ class GalleryController extends Controller
         $tag->save();
 
         return back()->with('success', 'Tag created successfully!');
+    }
+    public function destroy($id)
+    {
+        if (!$id) {
+            Log::error('Image ID is undefined');
+            return response()->json(['error' => 'Image ID is undefined'], 400);
+        }
+
+        $image = images::find($id); // Use the correct model name
+
+        if (!$image) {
+            Log::error('Image not found: ' . $id); // Log the error
+            return response()->json(['error' => 'Image not found'], 404);
+        }
+
+        Log::info('Deleting image: ' . $image->path); // Log the image path
+
+        Storage::disk('public')->delete($image->path); // Delete the image from storage
+        $image->delete(); // Delete the image from the database
+
+        return response()->json(['success' => 'Image deleted successfully']);
     }
 }

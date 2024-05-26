@@ -1,4 +1,5 @@
 <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('partials.head')
     <link href="{{ asset('css/form.css') }}" rel="stylesheet">
     <link href="{{ asset('css/gallery.css') }}" rel="stylesheet">
@@ -26,7 +27,7 @@
                             <div class="d-flex">
                                 @foreach ($imageChunk as $image)
                                 <div class="col">
-                                    <img src="{{ asset($image->path) }}" class="d-block w-100" alt="{{ $image->description }}" data-toggle="modal" data-target="#imageModalLarge" data-src="{{ asset($image->path) }}">
+                                    <img src="{{ asset($image->path) }}" class="d-block w-100" alt="{{ $image->description }}" data-toggle="modal" data-target="#imageModalLarge" data-src="{{ asset($image->path) }}" data-id="{{ $image->id }}">
                                 </div>
                                 @endforeach
                             </div>
@@ -50,7 +51,10 @@
     <div class="modal fade" id="imageModalLarge" tabindex="-1" aria-labelledby="imageModalLargeLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-body" id="modalBody">
+                    @can('admin')
+                    <button class="close-button" id="deleteImageButton">X</button>
+                    @endcan
                     <img src="" id="modalImageLarge" class="img-fluid" alt="">
                 </div>
             </div>
@@ -66,11 +70,38 @@
         $('#imageModalLarge').on('show.bs.modal', function(event) {
             var img = $(event.relatedTarget); // Image that triggered the modal
             var src = img.data('src'); // Extract info from data-* attributes
+            var id = img.data('id'); // Extract image ID
             var modal = $(this);
             modal.find('#modalImageLarge').attr('src', src);
+            modal.find('#deleteImageButton').data('id', id); // Set the image ID on the delete button
         });
-        $('#modalImageLarge').on('click', function() {
+        $('#modalBody').on('click', function() {
             $('#imageModalLarge').modal('hide');
+        });
+
+
+        $('#deleteImageButton').on('click', function() {
+            var id = $(this).data('id'); // Get the image ID from the button
+            if (id === undefined) {
+                alert('Image ID is undefined');
+                return;
+            }
+            $.ajax({
+                url: '/delete-image/' + id,
+                type: 'DELETE',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(result) {
+                    // On success, remove the image from the carousel and close the modal
+                    $('img[data-id="' + id + '"]').closest('.col').remove();
+                    $('#imageModalLarge').modal('hide');
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    alert('Error deleting image: ' + error);
+                }
+            });
         });
     </script>
 </body><br><br>

@@ -47,6 +47,7 @@ Route::middleware('auth', 'can:admin')->group(function () {
     //Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
     Route::post('/upload-image', [GalleryController::class, 'uploadImage'])->name('image.upload');
     Route::post('/tags', [GalleryController::class, 'storeTag'])->name('tags.store');
+    Route::delete('/delete-image/{id}', [GalleryController::class, 'destroy'])->name('image.destroy');
 
 });
 
