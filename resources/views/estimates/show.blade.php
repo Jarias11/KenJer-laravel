@@ -78,8 +78,41 @@
             margin-top: 20px;
         }
 
-        .footer p {
+        .footer-text {
             margin: 5px 0;
+            font-size: 0.7em;
+            /* Smaller font size */
+        }
+
+        .prepared-section {
+
+            width: 100%;
+            /* Align items vertically in the center */
+            margin-top: 20px;
+            border: black solid 2px;
+        }
+        .prepared-by{
+            padding-right:19%;
+        }
+        .prepared-by,
+        .date {
+            margin-top:70px;
+            float:left;
+            width: 40%;
+            text-align: center;
+            /* Center the text in each div */
+        }
+
+        .prepared-by hr,
+        .date hr {
+            border: none;
+            border-top: 1px solid #000;
+            margin-bottom: 5px;
+        }
+
+        .prepared-by p,
+        .date p {
+            margin: 0;
         }
 
         .right-align {
@@ -253,12 +286,24 @@
                 </tr>
             </tbody>
         </table>
+        <div>
+            <h2>Notes: </h2>
+            <p1>{{$estimate->notes}}</p1>
+        </div>
 
         <div class="footer">
-            <p>East Windsor NJ 08520</p>
-            <p>kenjercontractor@gmail.com</p>
-            <p>609-977-8713 | 609-422-1009</p>
-            <p class="italic">Make all checks payable to <b>FANNY ARIAS</b>. If you have any questions concerning this estimate, please feel free to contact us at any time. Thank you for your business!</p>
+            <p class="footer-text">This is an estimate only, not a contract. This estimate is for completing the job described above, based on our evaluation. It does not include unforeseen price increases or additional labor and materials which may be required should problems arise.</p>
+            <p class="footer-text">All payments will be split as 1/3 on signing contract, 2/3 in work beginning and 3/3 finishing the work.</p>
+            <div class="prepared-section">
+                <div class="prepared-by">
+                    <hr>
+                    <p>Prepared By</p>
+                </div>
+                <div class="date">
+                    <hr>
+                    <p>Date</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

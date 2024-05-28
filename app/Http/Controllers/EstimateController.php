@@ -18,7 +18,7 @@ class EstimateController extends Controller
     public function index()
     {
         $estimates = estimate::all();
-        return view('estimates.index', compact('estimates'));
+        return view('invoices.index', compact('invoices'));
     }
 
     public function store(Request $request)

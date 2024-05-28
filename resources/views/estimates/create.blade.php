@@ -1,5 +1,86 @@
+<style>
+    #AddEstimate {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    #AddEstimate .form-group {
+        margin-bottom: 15px;
+    }
+
+    #AddEstimate label {
+        font-weight: bold;
+        font-size: 1em;
+        color: #333;
+        /* Darker color for better visibility */
+    }
+
+    #AddEstimate .form-control {
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        padding: 10px;
+        font-size: 1em;
+        color: #495057;
+        /* Darker text color for better readability */
+        background-color: #fff;
+    }
+
+    #AddEstimate .item-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    #AddEstimate .item-row textarea {
+        flex: 2;
+    }
+
+    #AddEstimate .item-row input {
+        flex: 1;
+    }
+
+    #add-item-button,
+    .btn-primary {
+        margin-top: 10px;
+    }
+
+    .btn {
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+</style>
 <div class="container" id="AddEstimate">
-    <form action="{{ route('estimate.store') }}" method="POST">
+    <form action="{{ route('estimates.store') }}" method="POST">
         @csrf
         <div class="form-group">
             <label for="client_name">Client Name:</label>
@@ -30,7 +111,7 @@
             </div>
         </div>
         <button type="button" class="btn btn-secondary" id="add-item-button">Add Item</button>
-        <button type="submit" class="btn btn-primary">Create Invoice</button>
+        <button type="submit" class="btn btn-primary">Create Estimate</button>
     </form>
 </div>
 <script>

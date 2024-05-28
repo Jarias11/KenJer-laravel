@@ -50,6 +50,7 @@
                         {{ __('Estimate Maker') }}
                     </h3>
                     <p>Create and manage estimates quickly.</p>
+                    @include('estimates.create')
                     <!-- Add your estimate maker content here -->
                 </div>
             </div>

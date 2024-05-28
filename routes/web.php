@@ -60,13 +60,11 @@ Route::middleware('auth')->group(function () {
 
     // Invoice routes
 
-    Route::get('/invoices', [InvoiceController::class, 'index'])->name('invoices.index');
     Route::get('/invoices/create', [InvoiceController::class, 'create'])->name('invoices.create');
     Route::post('/invoices', [InvoiceController::class, 'store'])->name('invoices.store');
     Route::get('/invoices/{invoice}', [InvoiceController::class, 'show'])->name('invoices.show');
 
     //Estimate routes
-    Route::get('estimates',[EstimateController::class,'index'])->name('estimates.index');
     Route::get('/estimates/create', [EstimateController::class, 'create'])->name('estimates.create');
     Route::post('/estimates', [EstimateController::class, 'store'])->name('estimates.store');
     Route::get('/estimates/{estimate}', [EstimateController::class, 'show'])->name('estimates.show');
