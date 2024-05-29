@@ -16,8 +16,7 @@
 
 
 </head>
-<!--
-< <div class="ad">Call Now For Free Estimate/Consultation 609-977-8713</div> -->
+
 
 <body>
     @include('partials.navbar')
@@ -162,14 +161,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="form-container">
 
-            <div class="BlockAd">
-                <p>"GOOD WORK</p>
-                <p>GOOD PRICES"</p>
-            </div> -->
-
-        <!-- <a href="tel:6099778713" class="phoneMe"> <img src="images/phoneIcon.png" class= "shake"style="width: 80%;height: 80%;">   </a> -->
     </section>
     <section class="services pt-3">
         <div class="row">

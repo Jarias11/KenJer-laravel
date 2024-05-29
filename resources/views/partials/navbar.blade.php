@@ -30,7 +30,7 @@ BootStrap NavBar Example Three - Social Media Icons
                     <!-- Admin Link -->
                     @auth
                     @if(auth()->user()->is_admin)
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="/admin/gallery/edit"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Edit Gallery</a></li>
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="{{ route('dashboard') }}"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Dashboard</a></li>
                     @endif
                     @endauth
 
@@ -50,7 +50,7 @@ BootStrap NavBar Example Three - Social Media Icons
                     <li class="nav-item px-lg-2"> <a class="nav-link" href="{{ route('contact') }}"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Contact</a> </li>
                 </ul>
                 <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
-                    <li class="nav-item"> <a class="nav-link" href="#">
+                <!--    <li class="nav-item"> <a class="nav-link" href="#">
                             <i class="fab fa-twitter"></i><span class="d-lg-none ml-3">Twitter</span>
                         </a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#">
@@ -61,7 +61,7 @@ BootStrap NavBar Example Three - Social Media Icons
                         </a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#">
                             <i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
-                        </a> </li>
+                        </a> </li> -->
                     @auth
                     <li>
                         <form method="POST" action="{{ route('logout') }}">
