@@ -6,6 +6,8 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\EstimateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +22,14 @@ use App\Http\Controllers\ProfileController;
 
 // Home Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+//test
+
+
+//estimates
+Route::get('/estimates', function () {
+    return view('/estimates/create'); // 'test' is the name of your view file without the '.blade.php' extension
+});
 
 // Services Page
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
@@ -49,6 +59,19 @@ Route::middleware('auth', 'can:admin')->group(function () {
     Route::post('/tags', [GalleryController::class, 'storeTag'])->name('tags.store');
     Route::delete('/delete-image/{id}', [GalleryController::class, 'destroy'])->name('image.destroy');
 
+
+    // Invoice routes
+
+    Route::get('/invoices/create', [InvoiceController::class, 'create'])->name('invoices.create');
+    Route::post('/invoices', [InvoiceController::class, 'store'])->name('invoices.store');
+    Route::get('/invoices/{invoice}', [InvoiceController::class, 'show'])->name('invoices.show');
+
+    //Estimate routes
+    Route::get('/estimates/create', [EstimateController::class, 'create'])->name('estimates.create');
+    Route::post('/estimates', [EstimateController::class, 'store'])->name('estimates.store');
+    Route::get('/estimates/{estimate}', [EstimateController::class, 'show'])->name('estimates.show');
+
+
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
